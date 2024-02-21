@@ -13,11 +13,11 @@
 
 ### ESlint default conf
 
-<i>:heavy_check_mark: <b>How</b> would you like to use ESLint?</i> · <b>style</b>\
-<i>:heavy_check_mark: What <b>type of modules</b> does your project use?</i> · <b>esm</b>\
-<i>:heavy_check_mark: Which <b>framework</b> does your project use?</i> · <b>react</b>\
-<i>:x: Does your project use <b>TypeScript?</b></i> · <b>No</b>\
-<i>:heavy_check_mark: <b>Where</b> does your code run?</i> · <b>browser</b>\
+<i>:heavy_check_mark: <b>style</b> · <b>How</b> would you like to use ESLint?</i>\
+<i>:heavy_check_mark: <b>esm</b> · What <b>type of modules</b> does your project use?</i>\
+<i>:heavy_check_mark: <b>react</b> · Which <b>framework</b> does your project use?</i>\
+<i>:x: <b>No</b> · Does your project use <b>TypeScript?</b></i>\
+<i>:heavy_check_mark: <b>browser</b> · <b>Where</b> does your code run?</i>\
 <i>:heavy_check_mark: How would you like to define a <b>style</b> for your project?</i> · <b>prompt</b>\
 <i>:heavy_check_mark: What format do you want your <b>config file</b> to be in?</i> · <b>JSON</b>\
 <i>:heavy_check_mark: What style of <b>indentation</b> do you use?</i> · <b>tab</b>\
