@@ -12,17 +12,17 @@
 - [ ] Create custom single web page as a demonstration with documentation
 
 ### ESlint default configuration
-<p><i>√ <b>How</b> would you like to use ESLint?</i> · <b>style</b><p>
-<p><i>√ What <b>type of modules</b> does your project use?</i> · <b>esm</b><p>
-<p><i>√ Which <b>framework</b> does your project use?</i> · <b>react</b><p>
-<p><i>√ Does your project use <b>TypeScript?</b></i> · <b>No</b><p>
-<p><i>√ <b>Where</b> does your code run?</i> · <b>browser</b><p>
-<p><i>√ How would you like to define a <b>style</b> for your project?</i> · <b>prompt</b><p>
-<p><i>√ What format do you want your <b>config file</b> to be in?</i> · <b>JSON</b><p>
-<p><i>√ What style of <b>indentation</b> do you use?</i> · <b>tab</b><p>
-<p><i>√ What <b>quotes</b> do you use for strings?</i> · <b>single</b><p>
-<p><i>√ What <b>line endings</b> do you use?</i> · <b>unix</b><p>
-<p><i>√ Do you require <b>semicolons?</b></i> · <b>Yes</b><p>
+<p><i>:heavy_check_mark: <b>How</b> would you like to use ESLint?</i> · <b>style</b><p>
+<p><i>:heavy_check_mark: What <b>type of modules</b> does your project use?</i> · <b>esm</b><p>
+<p><i>:heavy_check_mark: Which <b>framework</b> does your project use?</i> · <b>react</b><p>
+<p><i>:heavy_check_mark: Does your project use <b>TypeScript?</b></i> · <b>No</b><p>
+<p><i>:heavy_check_mark: <b>Where</b> does your code run?</i> · <b>browser</b><p>
+<p><i>:heavy_check_mark: How would you like to define a <b>style</b> for your project?</i> · <b>prompt</b><p>
+<p><i>:heavy_check_mark: What format do you want your <b>config file</b> to be in?</i> · <b>JSON</b><p>
+<p><i>:heavy_check_mark: What style of <b>indentation</b> do you use?</i> · <b>tab</b><p>
+<p><i>:heavy_check_mark: What <b>quotes</b> do you use for strings?</i> · <b>single</b><p>
+<p><i>:heavy_check_mark: What <b>line endings</b> do you use?</i> · <b>unix</b><p>
+<p><i>:heavy_check_mark: Do you require <b>semicolons?</b></i> · <b>Yes</b><p>
 
 # Getting Started with Create React App
 
