@@ -12,17 +12,17 @@
 - [ ] Create custom single web page as a demonstration with documentation
 
 ### ESlint default configuration
-√ How would you like to use ESLint? · style       
-√ What type of modules does your project use? · esm
-√ Which framework does your project use? · react
-√ Does your project use TypeScript? · No
-√ Where does your code run? · browser
-√ How would you like to define a style for your project? · prompt
-√ What format do you want your config file to be in? · JSON
-√ What style of indentation do you use? · tab
-√ What quotes do you use for strings? · single
-√ What line endings do you use? · unix
-√ Do you require semicolons? · Yes
+<p>√ How would you like to use ESLint? · style<p>
+<p>√ What type of modules does your project use? · esm<p>
+<p>√ Which framework does your project use? · react<p>
+<p>√ Does your project use TypeScript? · No<p>
+<p>√ Where does your code run? · browser<p>
+<p>√ How would you like to define a style for your project? · prompt<p>
+<p>√ What format do you want your config file to be in? · JSON<p>
+<p>√ What style of indentation do you use? · tab<p>
+<p>√ What quotes do you use for strings? · single<p>
+<p>√ What line endings do you use? · unix<p>
+<p>√ Do you require semicolons? · Yes<p>
 
 # Getting Started with Create React App
 
