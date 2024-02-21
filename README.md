@@ -12,7 +12,7 @@
 - [ ] Create custom single web page as a demonstration with documentation
 
 ### ESlint default configuration
-<p>√ How would you like to use ESLint? · style<p>
+<p>√ <i>How would you like to use ESLint?<i> · <b>style<b><p>
 <p>√ What type of modules does your project use? · esm<p>
 <p>√ Which framework does your project use? · react<p>
 <p>√ Does your project use TypeScript? · No<p>
