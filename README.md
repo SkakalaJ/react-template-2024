@@ -12,8 +12,8 @@
 - [ ] Create custom single web page as a demonstration with documentation
 
 ### ESlint default configuration
-<p><i>:heavy_check_mark: <b>How</b> would you like to use ESLint?</i> · <b>style</b><p>
-<p><i>:heavy_check_mark: What <b>type of modules</b> does your project use?</i> · <b>esm</b><p>
+<i>:heavy_check_mark: <b>How</b> would you like to use ESLint?</i> · <b>style</b>\
+<i>:heavy_check_mark: What <b>type of modules</b> does your project use?</i> · <b>esm</b>\
 <p><i>:heavy_check_mark: Which <b>framework</b> does your project use?</i> · <b>react</b><p>
 <p><i>:x: Does your project use <b>TypeScript?</b></i> · <b>No</b><p>
 <p><i>:heavy_check_mark: <b>Where</b> does your code run?</i> · <b>browser</b><p>
