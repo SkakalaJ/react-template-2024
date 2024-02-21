@@ -18,20 +18,20 @@
 <i>:heavy_check_mark: <b>react</b> · Which <b>framework</b> does your project use?</i>\
 <i>:x: <b>No</b> · Does your project use <b>TypeScript?</b></i>\
 <i>:heavy_check_mark: <b>browser</b> · <b>Where</b> does your code run?</i>\
-<i>:heavy_check_mark: How would you like to define a <b>style</b> for your project?</i> · <b>prompt</b>\
-<i>:heavy_check_mark: What format do you want your <b>config file</b> to be in?</i> · <b>JSON</b>\
-<i>:heavy_check_mark: What style of <b>indentation</b> do you use?</i> · <b>tab</b>\
-<i>:heavy_check_mark: What <b>quotes</b> do you use for strings?</i> · <b>single</b>\
-<i>:heavy_check_mark: What <b>line endings</b> do you use?</i> · <b>unix</b>\
-<i>:heavy_check_mark: Do you require <b>semicolons?</b></i> · <b>Yes</b>
+<i>:heavy_check_mark: <b>prompt</b> · How would you like to define a <b>style</b> for your project?</i>\
+<i>:heavy_check_mark: <b>JSON</b> · What format do you want your <b>config file</b> to be in?</i>\
+<i>:heavy_check_mark: <b>tab</b> · What style of <b>indentation</b> do you use?</i>\
+<i>:heavy_check_mark: <b>single</b> · What <b>quotes</b> do you use for strings?</i>\
+<i>:heavy_check_mark: <b>unix</b> · What <b>line endings</b> do you use?</i>\
+<i>:heavy_check_mark: <b>Yes</b> · Do you require <b>semicolons?</b></i>
 
 ### Jest default conf
 
-<i>:x: Would you like to use <b>Typescript</b> for the configuration file?</i> · <b>no</b>\
-<i>:heavy_check_mark: Choose the <b>test environment</b> that will be used for testing</i> · <b>jsdom (browser-like)</b>\
-<i>:heavy_check_mark: Do you want Jest to add <b>coverage reports?</b></i> · <b>yes</b>\
-<i>:heavy_check_mark: Which <b>provider</b> should be used to instrument code for coverage?</b></i> · <b>v8</b>\
-<i>:heavy_check_mark: <b>Automatically clear mock calls</b>, instances, contexts and results before every test?</i> · <b>yes</b>\
+<i>:x: <b>no</b> · Would you like to use <b>Typescript</b> for the configuration file?</i>\
+<i>:heavy_check_mark: <b>jsdom (browser-like)</b> · Choose the <b>test environment</b> that will be used for testing</i>\
+<i>:heavy_check_mark: <b>yes</b> · Do you want Jest to add <b>coverage reports?</b></i>\
+<i>:heavy_check_mark: <b>v8</b> · Which <b>provider</b> should be used to instrument code for coverage?</b></i>\
+<i>:heavy_check_mark: <b>yes</b> · <b>Automatically clear mock calls</b>, instances, contexts and results before every test?</i>
 
 # Getting Started with Create React App
 
