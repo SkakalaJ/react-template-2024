@@ -1,14 +1,28 @@
 # To Do
 
-## Vanilla ReactJS
+## ReactJS Template 2024 - v1.0.0 by Georgeo
 
-- [x] react app - v18
-- [ ] Create folder structure and comment each folder with its purpose
-- [ ] Install and configure code formatting tool - ESlint & Prittier
-- [ ] Install and configure code quality tool - ESlint
-- [ ] Install and configure Test environment - Jest
-- [ ] Install and configure Web Bundler - Webpack
-- [ ] Create custom single demonstration web page with documentation
+- [x] React - v18.2.0
+- [ ] Create src folder structure and comment each folder with its purpose
+- [x] Install and configure code formatting tool - Prittier (v3.2.5)
+- [ ] Install and configure code quality tool - ESlint (v8.56.0)
+- [ ] Install and configure Test environment - Jest (v27.5.1)
+- [ ] Install and configure Web Bundler compatible with Jest - Webpack (v)
+- [ ] Install and configure centralized store library - Redux (v)
+- [ ] Create custom single web page as a demonstration with documentation
+
+### ESlint default configuration
+- √ How would you like to use ESLint? · style       
+- √ What type of modules does your project use? · esm
+- √ Which framework does your project use? · react
+- √ Does your project use TypeScript? · No / Yes
+- √ Where does your code run? · browser
+- √ How would you like to define a style for your project? · prompt
+- √ What format do you want your config file to be in? · JSON
+- √ What style of indentation do you use? · tab
+- √ What quotes do you use for strings? · single
+- √ What line endings do you use? · unix
+- √ Do you require semicolons? · No / Yes
 
 # Getting Started with Create React App
 
