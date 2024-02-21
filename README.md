@@ -7,7 +7,7 @@
 - [x] Install and configure code formatting tool - Prittier (v3.2.5)
 - [ ] Install and configure code quality tool - ESlint (v8.56.0)
 - [ ] Install and configure Test environment - Jest (v27.5.1)
-- [ ] Install and configure Web Bundler compatible with Jest - Webpack (v)
+- [ ] Install and configure Web Bundler compatible with Jest - Webpack (v5.90.3)
 - [ ] Install and configure centralized store library - Redux (v)
 - [ ] Create custom single web page as a demonstration with documentation
 
@@ -32,6 +32,16 @@
 <i>:heavy_check_mark: <b>yes</b> · Do you want Jest to add <b>coverage reports?</b></i>\
 <i>:heavy_check_mark: <b>v8</b> · Which <b>provider</b> should be used to instrument code for coverage?</b></i>\
 <i>:heavy_check_mark: <b>yes</b> · <b>Automatically clear mock calls</b>, instances, contexts and results before every test?</i>
+
+#### Jest modification for Webpack
+
+<i>:heavy_check_mark: </i>\
+<i>:heavy_check_mark: </i>\
+<i>:heavy_check_mark: </i>\
+<i>:heavy_check_mark: </i>\
+<i>:heavy_check_mark: </i>
+
+### Webpack default conf
 
 # Getting Started with Create React App
 
