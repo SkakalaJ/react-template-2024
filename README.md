@@ -12,17 +12,17 @@
 - [ ] Create custom single web page as a demonstration with documentation
 
 ### ESlint default configuration
-<p>√ <i>How would you like to use ESLint?<i> · <b>style<b><p>
-<p>√ What type of modules does your project use? · esm<p>
-<p>√ Which framework does your project use? · react<p>
-<p>√ Does your project use TypeScript? · No<p>
-<p>√ Where does your code run? · browser<p>
-<p>√ How would you like to define a style for your project? · prompt<p>
-<p>√ What format do you want your config file to be in? · JSON<p>
-<p>√ What style of indentation do you use? · tab<p>
-<p>√ What quotes do you use for strings? · single<p>
-<p>√ What line endings do you use? · unix<p>
-<p>√ Do you require semicolons? · Yes<p>
+<p><i>√ How would you like to use ESLint?</i> · <b>style</b><p>
+<p><i>√ What type of modules does your project use?</i> · <b>esm</b><p>
+<p><i>√ Which framework does your project use?</i> · <b>react</b><p>
+<p><i>√ Does your project use TypeScript?</i> · <b>No</b><p>
+<p><i>√ Where does your code run?</i> · <b>browser</b><p>
+<p><i>√ How would you like to define a style for your project?</i> · <b>prompt</b><p>
+<p><i>√ What format do you want your config file to be in?</i> · <b>JSON</b><p>
+<p><i>√ What style of indentation do you use?</i> · <b>tab</b><p>
+<p><i>√ What quotes do you use for strings?</i> · <b>single</b><p>
+<p><i>√ What line endings do you use?</i> · <b>unix</b><p>
+<p><i>√ Do you require semicolons?</i> · <b>Yes</b><p>
 
 # Getting Started with Create React App
 
