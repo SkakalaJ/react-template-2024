@@ -12,6 +12,7 @@
 - [ ] Create custom single web page as a demonstration with documentation
 
 ### ESlint default conf
+
 <i>:heavy_check_mark: <b>How</b> would you like to use ESLint?</i> · <b>style</b>\
 <i>:heavy_check_mark: What <b>type of modules</b> does your project use?</i> · <b>esm</b>\
 <i>:heavy_check_mark: Which <b>framework</b> does your project use?</i> · <b>react</b>\
@@ -23,6 +24,14 @@
 <i>:heavy_check_mark: What <b>quotes</b> do you use for strings?</i> · <b>single</b>\
 <i>:heavy_check_mark: What <b>line endings</b> do you use?</i> · <b>unix</b>\
 <i>:heavy_check_mark: Do you require <b>semicolons?</b></i> · <b>Yes</b>
+
+### Jest default conf
+
+<i>:x: Would you like to use <b>Typescript</b> for the configuration file?</i> · <b>no</b>\
+<i>:heavy_check_mark: Choose the <b>test environment</b> that will be used for testing</i> · <b>jsdom (browser-like)</b>\
+<i>:heavy_check_mark: Do you want Jest to add <b>coverage reports?</b></i> · <b>yes</b>\
+<i>:heavy_check_mark: Which <b>provider</b> should be used to instrument code for coverage?</b></i> · <b>v8</b>\
+<i>:heavy_check_mark: <b>Automatically clear mock calls</b>, instances, contexts and results before every test?</i> · <b>yes</b>\
 
 # Getting Started with Create React App
 
