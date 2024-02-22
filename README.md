@@ -5,8 +5,8 @@
 - [x] React - v18.2.0
 - [ ] Create src folder structure and comment each folder with its purpose
 - [x] Install and configure code formatting tool - Prittier (<i>v3.2.5</i>)
-- [ ] Install and configure code quality tool - ESlint (<i>v8.56.0</i>)
-- [ ] Install and configure Test environment - Jest (<i>v27.5.1</i>)
+- [x] Install and configure code quality tool - ESlint (<i>v8.56.0</i>)
+- [x] Install and configure Test environment - Jest (<i>v27.5.1</i>)
 - [ ] Install and configure Web Bundler compatible with Jest - Webpack (<i>v5.90.3</i>)
 - [ ] Install and configure centralized store library - Redux (<i>v0.0.0</i>)
 - [ ] Create custom single web page as a demonstration with documentation
@@ -48,6 +48,7 @@
 
 ### Jest default conf
 
+&emsp;&emsp; :heavy_check_mark: <b>10</b> · <i>Jest <b>stop running tests</b> after n failures.</i>\
 &emsp;&emsp; :x: <b>no</b> · <i>Would you like to use <b>Typescript</b> for the configuration file?</i>\
 &emsp;&emsp; :heavy_check_mark: <b>jsdom (browser-like)</b> · <i>Choose the <b>test environment</b> that will be used for testing</i>\
 &emsp;&emsp; :heavy_check_mark: <b>yes</b> · <i>Do you want Jest to add <b>coverage reports?</b></i>\
