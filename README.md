@@ -32,7 +32,7 @@
 <i>:heavy_check_mark: <b>jsdom (browser-like)</b> · Choose the <b>test environment</b> that will be used for testing</i>\
 <i>:heavy_check_mark: <b>yes</b> · Do you want Jest to add <b>coverage reports?</b></i>\
 <i>:heavy_check_mark: <b>v8</b> · Which <b>provider</b> should be used to instrument code for coverage?</b></i>\
-<i>:heavy_check_mark: <b>yes</b> · <b>Automatically clear mock calls</b>, instances, contexts and results before every test?</i>
+<i>:heavy_check_mark: <b>yes</b> · Automatically <b>clear mock calls</b>, instances, contexts and results before every test?</i>
 
 #### Jest modification for Webpack
 
