@@ -15,16 +15,16 @@
 ### Prittier default conf
 
 :heavy_check_mark: <b>always</b> · <i>Arrow Function Parentheses</i>\
-:heavy_check_mark: <b>false</b> · <i>Bracket Line</i>\
+:x: <b>false</b> · <i>Bracket Line</i>\
 :heavy_check_mark: <b>true</b> · <i>Bracket Spacing</i>\
 :heavy_check_mark: <b>lf</b> · <i>End of Line</i>\
 :heavy_check_mark: <b>auto</b> · <i>Embedded Language Formatting</i>\
 :heavy_check_mark: <b>strict</b> · <i>HTML Whitespace Sensitivity</i>\
 :heavy_check_mark: <b>true</b> · <i>Insert Pragma</i>\
 :heavy_check_mark: <b>true</b> · <i>JSX Quotes</i>\
-:heavy_check_mark: <b>false</b> · <i>Prose Wrap</i>\
+:x: <b>false</b> · <i>Prose Wrap</i>\
 :heavy_check_mark: <b>as-needed</b> · <i>Quote Props</i>\
-:heavy_check_mark: <b>false</b> · <i>Require Pragma</i>\
+:x: <b>false</b> · <i>Require Pragma</i>\
 :heavy_check_mark: <b>true</b> · <i>Semicolons</i>\
 :heavy_check_mark: <b>true</b> · <i>Single Attribute Per Line</i>\
 :heavy_check_mark: <b>true</b> · <i>Quotes</i>\
