@@ -14,53 +14,53 @@
 
 ### Prittier default conf
 
-&emsp; :heavy_check_mark: <i>Arrow Function Parentheses</i> · <b>always</b>\
-&emsp; :x: <i>Bracket Line</i> · <b>false</b>\
-&emsp; :heavy_check_mark: <i>Bracket Spacing</i> · <b>true</b>\
-&emsp; :heavy_check_mark: <i>End of Line</i> · <b>lf</b>\
-&emsp; :heavy_check_mark: <i>Embedded Language Formatting</i> · <b>auto</b>\
-&emsp; :heavy_check_mark: <i>HTML Whitespace Sensitivity</i> · <b>strict</b>\
-&emsp; :heavy_check_mark: <i>Insert Pragma</i> · <b>true</b>\
-&emsp; :heavy_check_mark: <i>JSX Quotes</i> · <b>true</b>\
-&emsp; :x: <i>Prose Wrap</i> · <b>false</b>\
-&emsp; :heavy_check_mark: <i>Quote Props</i> · <b>as-needed</b>\
-&emsp; :x: <i>Require Pragma</i> · <b>false</b>\
-&emsp; :heavy_check_mark: <i>Semicolons</i> · <b>true</b>\
-&emsp; :heavy_check_mark: <i>Single Attribute Per Line</i> · <b>true</b>\
-&emsp; :heavy_check_mark: <i>Quotes</i> · <b>true</b>\
-&emsp; :heavy_check_mark: <i>Trailing Commas</i> · <b>all</b>\
-&emsp; :heavy_check_mark: <i>Tab Width</i> · <b>2</b>\
-&emsp; :heavy_check_mark: <i>Tabs</i> · <b>true</b>
+&emsp;&emsp; :heavy_check_mark: <i>Arrow Function Parentheses</i> · <b>always</b>\
+&emsp;&emsp; :x: <i>Bracket Line</i> · <b>false</b>\
+&emsp;&emsp; :heavy_check_mark: <i>Bracket Spacing</i> · <b>true</b>\
+&emsp;&emsp; :heavy_check_mark: <i>End of Line</i> · <b>lf</b>\
+&emsp;&emsp; :heavy_check_mark: <i>Embedded Language Formatting</i> · <b>auto</b>\
+&emsp;&emsp; :heavy_check_mark: <i>HTML Whitespace Sensitivity</i> · <b>strict</b>\
+&emsp;&emsp; :heavy_check_mark: <i>Insert Pragma</i> · <b>true</b>\
+&emsp;&emsp; :heavy_check_mark: <i>JSX Quotes</i> · <b>true</b>\
+&emsp;&emsp; :x: <i>Prose Wrap</i> · <b>false</b>\
+&emsp;&emsp; :heavy_check_mark: <i>Quote Props</i> · <b>as-needed</b>\
+&emsp;&emsp; :x: <i>Require Pragma</i> · <b>false</b>\
+&emsp;&emsp; :heavy_check_mark: <i>Semicolons</i> · <b>true</b>\
+&emsp;&emsp; :heavy_check_mark: <i>Single Attribute Per Line</i> · <b>true</b>\
+&emsp;&emsp; :heavy_check_mark: <i>Quotes</i> · <b>true</b>\
+&emsp;&emsp; :heavy_check_mark: <i>Trailing Commas</i> · <b>all</b>\
+&emsp;&emsp; :heavy_check_mark: <i>Tab Width</i> · <b>2</b>\
+&emsp;&emsp; :heavy_check_mark: <i>Tabs</i> · <b>true</b>
 
 ### ESlint default conf
 
 &emsp;&emsp; :heavy_check_mark: <b>style</b> · <i><b>How</b> would you like to use ESLint?</i>\
-&emsp; :heavy_check_mark: <b>esm</b> · <i>What <b>type of modules</b> does your project use?</i>\
-&emsp; :heavy_check_mark: <b>react</b> · <i>Which <b>framework</b> does your project use?</i>\
-&emsp; :x: <b>No</b> · <i>Does your project use <b>TypeScript?</b></i>\
-&emsp; :heavy_check_mark: <b>browser</b> · <i><b>Where</b> does your code run?</i>\
-&emsp; :heavy_check_mark: <b>prompt</b> · <i>How would you like to define a <b>style</b> for your project?</i>\
-&emsp; :heavy_check_mark: <b>JSON</b> · <i>What format do you want your <b>config file</b> to be in?</i>\
-&emsp; :heavy_check_mark: <b>tab</b> · <i>What style of <b>indentation</b> do you use?</i>\
-&emsp; :heavy_check_mark: <b>single</b> · <i>What <b>quotes</b> do you use for strings?</i>\
-&emsp; :heavy_check_mark: <b>unix</b> · <i>What <b>line endings</b> do you use?</i>\
-&emsp; :heavy_check_mark: <b>Yes</b> · <i>Do you require <b>semicolons?</b></i>
+&emsp;&emsp; :heavy_check_mark: <b>esm</b> · <i>What <b>type of modules</b> does your project use?</i>\
+&emsp;&emsp; :heavy_check_mark: <b>react</b> · <i>Which <b>framework</b> does your project use?</i>\
+&emsp;&emsp; :x: <b>No</b> · <i>Does your project use <b>TypeScript?</b></i>\
+&emsp;&emsp; :heavy_check_mark: <b>browser</b> · <i><b>Where</b> does your code run?</i>\
+&emsp;&emsp; :heavy_check_mark: <b>prompt</b> · <i>How would you like to define a <b>style</b> for your project?</i>\
+&emsp;&emsp; :heavy_check_mark: <b>JSON</b> · <i>What format do you want your <b>config file</b> to be in?</i>\
+&emsp;&emsp; :heavy_check_mark: <b>tab</b> · <i>What style of <b>indentation</b> do you use?</i>\
+&emsp;&emsp; :heavy_check_mark: <b>single</b> · <i>What <b>quotes</b> do you use for strings?</i>\
+&emsp;&emsp; :heavy_check_mark: <b>unix</b> · <i>What <b>line endings</b> do you use?</i>\
+&emsp;&emsp; :heavy_check_mark: <b>Yes</b> · <i>Do you require <b>semicolons?</b></i>
 
 ### Jest default conf
 
-&emsp; :x: <b>no</b> · <i>Would you like to use <b>Typescript</b> for the configuration file?</i>\
-&emsp; :heavy_check_mark: <b>jsdom (browser-like)</b> · <i>Choose the <b>test environment</b> that will be used for testing</i>\
-&emsp; :heavy_check_mark: <b>yes</b> · <i>Do you want Jest to add <b>coverage reports?</b></i>\
-&emsp; :heavy_check_mark: <b>v8</b> · <i>Which <b>provider</b> should be used to instrument code for coverage?</b></i>\
-&emsp; :heavy_check_mark: <b>yes</b> · <i>Automatically <b>clear mock calls</b>, instances, contexts and results before every test?</i>
+&emsp;&emsp; :x: <b>no</b> · <i>Would you like to use <b>Typescript</b> for the configuration file?</i>\
+&emsp;&emsp; :heavy_check_mark: <b>jsdom (browser-like)</b> · <i>Choose the <b>test environment</b> that will be used for testing</i>\
+&emsp;&emsp; :heavy_check_mark: <b>yes</b> · <i>Do you want Jest to add <b>coverage reports?</b></i>\
+&emsp;&emsp; :heavy_check_mark: <b>v8</b> · <i>Which <b>provider</b> should be used to instrument code for coverage?</b></i>\
+&emsp;&emsp; :heavy_check_mark: <b>yes</b> · <i>Automatically <b>clear mock calls</b>, instances, contexts and results before every test?</i>
 
 #### Jest modification for Webpack
 
-&emsp; <i>:heavy_check_mark: </i>\
-&emsp; <i>:heavy_check_mark: </i>\
-&emsp; <i>:heavy_check_mark: </i>\
-&emsp; <i>:heavy_check_mark: </i>\
-&emsp; <i>:heavy_check_mark: </i>
+&emsp;&emsp; <i>:heavy_check_mark: </i>\
+&emsp;&emsp; <i>:heavy_check_mark: </i>\
+&emsp;&emsp; <i>:heavy_check_mark: </i>\
+&emsp;&emsp; <i>:heavy_check_mark: </i>\
+&emsp;&emsp; <i>:heavy_check_mark: </i>
 
 ### Webpack default conf
 
