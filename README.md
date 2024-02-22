@@ -34,7 +34,7 @@
 
 ### ESlint default conf
 
-&emsp; :heavy_check_mark: <b>style</b> · <i><b>How</b> would you like to use ESLint?</i>\
+&emsp;&emsp; :heavy_check_mark: <b>style</b> · <i><b>How</b> would you like to use ESLint?</i>\
 &emsp; :heavy_check_mark: <b>esm</b> · <i>What <b>type of modules</b> does your project use?</i>\
 &emsp; :heavy_check_mark: <b>react</b> · <i>Which <b>framework</b> does your project use?</i>\
 &emsp; :x: <b>No</b> · <i>Does your project use <b>TypeScript?</b></i>\
