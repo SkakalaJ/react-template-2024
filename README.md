@@ -14,23 +14,23 @@
 
 ### Prittier default conf
 
-:heavy_check_mark: <b>always</b> · <i>Arrow Function Parentheses</i>\
+:heavy_check_mark: <i>Arrow Function Parentheses</i> · <b>always</b>\
 :x: <b>false</b> · <i>Bracket Line</i>\
-:heavy_check_mark: <b>true</b> · <i>Bracket Spacing</i>\
-:heavy_check_mark: <b>lf</b> · <i>End of Line</i>\
-:heavy_check_mark: <b>auto</b> · <i>Embedded Language Formatting</i>\
-:heavy_check_mark: <b>strict</b> · <i>HTML Whitespace Sensitivity</i>\
-:heavy_check_mark: <b>true</b> · <i>Insert Pragma</i>\
-:heavy_check_mark: <b>true</b> · <i>JSX Quotes</i>\
-:x: <b>false</b> · <i>Prose Wrap</i>\
-:heavy_check_mark: <b>as-needed</b> · <i>Quote Props</i>\
-:x: <b>false</b> · <i>Require Pragma</i>\
-:heavy_check_mark: <b>true</b> · <i>Semicolons</i>\
-:heavy_check_mark: <b>true</b> · <i>Single Attribute Per Line</i>\
-:heavy_check_mark: <b>true</b> · <i>Quotes</i>\
-:heavy_check_mark: <b>all</b> · <i>Trailing Commas</i>\
-:heavy_check_mark: <b>2</b> · <i>Tab Width</i>\
-:heavy_check_mark: <b>true</b> · <i>Tabs</i>
+:heavy_check_mark: <i>Bracket Spacing</i> · <b>true</b>\
+:heavy_check_mark: <i>End of Line</i><b>lf</b> · \
+:heavy_check_mark: <i>Embedded Language Formatting</i> · <b>auto</b>\
+:heavy_check_mark: <i>HTML Whitespace Sensitivity</i> · <b>strict</b>\
+:heavy_check_mark: <i>Insert Pragma</i> · <b>true</b>\
+:heavy_check_mark: <i>JSX Quotes</i> · <b>true</b>\
+:x: <i>Prose Wrap</i> · <b>false</b>\
+:heavy_check_mark: <i>Quote Props</i> · <b>as-needed</b>\
+:x: <i>Require Pragma</i> · <b>false</b>\
+:heavy_check_mark: <i>Semicolons</i> · <b>true</b>\
+:heavy_check_mark: <i>Single Attribute Per Line</i> · <b>true</b>\
+:heavy_check_mark: <i>Quotes</i> · <b>true</b>\
+:heavy_check_mark: <i>Trailing Commas</i> · <b>all</b>\
+:heavy_check_mark: <i>Tab Width</i> · <b>2</b>\
+:heavy_check_mark: <i>Tabs</i> · <b>true</b>
 
 ### ESlint default conf
 
