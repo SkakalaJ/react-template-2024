@@ -14,25 +14,23 @@
 
 ### Prittier default conf
 
-:heavy_check_mark: <b>always</b> · <i>arrowParens</i>\
-
-
-"bracketSameLine": false,
-"bracketSpacing": true,
-"endOfLine" : "lf",
-"embeddedLanguageFormatting": "auto",
-"htmlWhitespaceSensitivity": "strict",
-"insertPragma": true,
-"jsxSingleQuote": true,
-"proseWrap": false,
-"quoteProps": "as-needed",
-"requirePragma": false,
-"semi": true,
-"singleAttributePerLine": true,
-"singleQuote": true,
-"trailingComma": "all",
-"tabWidth": 2,
-"useTabs": true
+:heavy_check_mark: <b>always</b> · <i>Arrow Function Parentheses</i>\
+:heavy_check_mark: <b>false</b> · <i>Bracket Line</i>\
+:heavy_check_mark: <b>true</b> · <i>Bracket Spacing</i>\
+:heavy_check_mark: <b>lf</b> · <i>End of Line</i>\
+:heavy_check_mark: <b>auto</b> · <i>Embedded Language Formatting</i>\
+:heavy_check_mark: <b>strict</b> · <i>HTML Whitespace Sensitivity</i>\
+:heavy_check_mark: <b>true</b> · <i>Insert Pragma</i>\
+:heavy_check_mark: <b>true</b> · <i>JSX Quotes</i>\
+:heavy_check_mark: <b>false</b> · <i>Prose Wrap</i>\
+:heavy_check_mark: <b>as-needed</b> · <i>Quote Props</i>\
+:heavy_check_mark: <b>false</b> · <i>Require Pragma</i>\
+:heavy_check_mark: <b>true</b> · <i>Semicolons</i>\
+:heavy_check_mark: <b>true</b> · <i>Single Attribute Per Line</i>\
+:heavy_check_mark: <b>true</b> · <i>Quotes</i>\
+:heavy_check_mark: <b>all</b> · <i>Trailing Commas</i>\
+:heavy_check_mark: <b>2</b> · <i>Tab Width</i>\
+:heavy_check_mark: <b>true</b> · <i>Tabs</i>
 
 ### ESlint default conf
 
@@ -50,11 +48,11 @@
 
 ### Jest default conf
 
-<i>:x: <b>no</b> · Would you like to use <b>Typescript</b> for the configuration file?</i>\
-<i>:heavy_check_mark: <b>jsdom (browser-like)</b> · Choose the <b>test environment</b> that will be used for testing</i>\
-<i>:heavy_check_mark: <b>yes</b> · Do you want Jest to add <b>coverage reports?</b></i>\
-<i>:heavy_check_mark: <b>v8</b> · Which <b>provider</b> should be used to instrument code for coverage?</b></i>\
-<i>:heavy_check_mark: <b>yes</b> · Automatically <b>clear mock calls</b>, instances, contexts and results before every test?</i>
+:x: <b>no</b> · <i>Would you like to use <b>Typescript</b> for the configuration file?</i>\
+:heavy_check_mark: <b>jsdom (browser-like)</b> · <i>Choose the <b>test environment</b> that will be used for testing</i>\
+:heavy_check_mark: <b>yes</b> · <i>Do you want Jest to add <b>coverage reports?</b></i>\
+:heavy_check_mark: <b>v8</b> · <i>Which <b>provider</b> should be used to instrument code for coverage?</b></i>\
+:heavy_check_mark: <b>yes</b> · <i>Automatically <b>clear mock calls</b>, instances, contexts and results before every test?</i>
 
 #### Jest modification for Webpack
 
