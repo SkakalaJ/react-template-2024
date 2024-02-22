@@ -10,6 +10,7 @@
 - [ ] Install and configure Web Bundler compatible with Jest - Webpack (v5.90.3)
 - [ ] Install and configure centralized store library - Redux (v)
 - [ ] Create custom single web page as a demonstration with documentation
+- [ ] Create Dockerfile and docker-compose
 
 ### ESlint default conf
 
