@@ -11,27 +11,49 @@
 - [ ] Install and configure centralized store library - Redux (v)
 - [ ] Create custom single web page as a demonstration with documentation
 
+### Prittier default conf
+
+:heavy_check_mark: <b>always</b> · <i>arrowParens</i>\
+
+
+"bracketSameLine": false,
+"bracketSpacing": true,
+"endOfLine" : "lf",
+"embeddedLanguageFormatting": "auto",
+"htmlWhitespaceSensitivity": "strict",
+"insertPragma": true,
+"jsxSingleQuote": true,
+"proseWrap": false,
+"quoteProps": "as-needed",
+"requirePragma": false,
+"semi": true,
+"singleAttributePerLine": true,
+"singleQuote": true,
+"trailingComma": "all",
+"tabWidth": 2,
+"useTabs": true
+
 ### ESlint default conf
 
-<i>:heavy_check_mark: <b>style</b> · <b>How</b> would you like to use ESLint?</i>\
-<i>:heavy_check_mark: <b>esm</b> · What <b>type of modules</b> does your project use?</i>\
-<i>:heavy_check_mark: <b>react</b> · Which <b>framework</b> does your project use?</i>\
-<i>:x: <b>No</b> · Does your project use <b>TypeScript?</b></i>\
-<i>:heavy_check_mark: <b>browser</b> · <b>Where</b> does your code run?</i>\
-<i>:heavy_check_mark: <b>prompt</b> · How would you like to define a <b>style</b> for your project?</i>\
-<i>:heavy_check_mark: <b>JSON</b> · What format do you want your <b>config file</b> to be in?</i>\
-<i>:heavy_check_mark: <b>tab</b> · What style of <b>indentation</b> do you use?</i>\
-<i>:heavy_check_mark: <b>single</b> · What <b>quotes</b> do you use for strings?</i>\
-<i>:heavy_check_mark: <b>unix</b> · What <b>line endings</b> do you use?</i>\
-<i>:heavy_check_mark: <b>Yes</b> · Do you require <b>semicolons?</b></i>
+:heavy_check_mark: <b>style</b> · <i><b>How</b> would you like to use ESLint?</i>\
+:heavy_check_mark: <b>esm</b> · <i>What <b>type of modules</b> does your project use?</i>\
+:heavy_check_mark: <b>react</b> · <i>Which <b>framework</b> does your project use?</i>\
+:x: <b>No</b> · <i>Does your project use <b>TypeScript?</b></i>\
+:heavy_check_mark: <b>browser</b> · <i><b>Where</b> does your code run?</i>\
+:heavy_check_mark: <b>prompt</b> · <i>How would you like to define a <b>style</b> for your project?</i>\
+:heavy_check_mark: <b>JSON</b> · <i>What format do you want your <b>config file</b> to be in?</i>\
+:heavy_check_mark: <b>tab</b> · <i>What style of <b>indentation</b> do you use?</i>\
+:heavy_check_mark: <b>single</b> · <i>What <b>quotes</b> do you use for strings?</i>\
+:heavy_check_mark: <b>unix</b> · <i>What <b>line endings</b> do you use?</i>\
+:heavy_check_mark: <b>Yes</b> · <i>Do you require <b>semicolons?</b></i>
 
 ### Jest default conf
 
-<i>:x: <b>no</b> · Would you like to use <b>Typescript</b> for the configuration file?</i>\
-<i>:heavy_check_mark: <b>jsdom (browser-like)</b> · Choose the <b>test environment</b> that will be used for testing</i>\
-<i>:heavy_check_mark: <b>yes</b> · Do you want Jest to add <b>coverage reports?</b></i>\
-<i>:heavy_check_mark: <b>v8</b> · Which <b>provider</b> should be used to instrument code for coverage?</b></i>\
-<i>:heavy_check_mark: <b>yes</b> · <b>Automatically clear mock calls</b>, instances, contexts and results before every test?</i>
+:x: <b>no</b> · <i>Would you like to use <b>Typescript</b> for the configuration file?</i>\
+:heavy_check_mark: <b>jsdom (browser-like)</b> · <i>Choose the <b>test environment</b> that will be used for testing</i>\
+:heavy_check_mark: <b>yes</b> · <i>Do you want Jest to add <b>coverage reports?</b></i>\
+:heavy_check_mark: <b>v8</b> · <i>Which <b>provider</b> should be used to instrument code for coverage?</b></i>\
+:heavy_check_mark: <b>yes</b> · <i><b>Automatically clear mock calls</b>, instances, contexts and results before every test?</i>
 
 #### Jest modification for Webpack
 
