@@ -4,12 +4,13 @@
 
 - [x] React - v18.2.0
 - [ ] Create src folder structure and comment each folder with its purpose
-- [x] Install and configure code formatting tool - Prittier (v3.2.5)
-- [ ] Install and configure code quality tool - ESlint (v8.56.0)
-- [ ] Install and configure Test environment - Jest (v27.5.1)
-- [ ] Install and configure Web Bundler compatible with Jest - Webpack (v5.90.3)
-- [ ] Install and configure centralized store library - Redux (v)
+- [x] Install and configure code formatting tool - Prittier (<i>v3.2.5</i>)
+- [ ] Install and configure code quality tool - ESlint (<i>v8.56.0</i>)
+- [ ] Install and configure Test environment - Jest (<i>v27.5.1</i>)
+- [ ] Install and configure Web Bundler compatible with Jest - Webpack (<i>v5.90.3</i>)
+- [ ] Install and configure centralized store library - Redux (<i>v0.0.0</i>)
 - [ ] Create custom single web page as a demonstration with documentation
+- [ ] Create Dockerfile and docker-compose
 
 ### Prittier default conf
 
@@ -49,11 +50,11 @@
 
 ### Jest default conf
 
-:x: <b>no</b> · <i>Would you like to use <b>Typescript</b> for the configuration file?</i>\
-:heavy_check_mark: <b>jsdom (browser-like)</b> · <i>Choose the <b>test environment</b> that will be used for testing</i>\
-:heavy_check_mark: <b>yes</b> · <i>Do you want Jest to add <b>coverage reports?</b></i>\
-:heavy_check_mark: <b>v8</b> · <i>Which <b>provider</b> should be used to instrument code for coverage?</b></i>\
-:heavy_check_mark: <b>yes</b> · <i><b>Automatically clear mock calls</b>, instances, contexts and results before every test?</i>
+<i>:x: <b>no</b> · Would you like to use <b>Typescript</b> for the configuration file?</i>\
+<i>:heavy_check_mark: <b>jsdom (browser-like)</b> · Choose the <b>test environment</b> that will be used for testing</i>\
+<i>:heavy_check_mark: <b>yes</b> · Do you want Jest to add <b>coverage reports?</b></i>\
+<i>:heavy_check_mark: <b>v8</b> · Which <b>provider</b> should be used to instrument code for coverage?</b></i>\
+<i>:heavy_check_mark: <b>yes</b> · Automatically <b>clear mock calls</b>, instances, contexts and results before every test?</i>
 
 #### Jest modification for Webpack
 
