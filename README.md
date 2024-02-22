@@ -15,7 +15,7 @@
 ### Prittier default conf
 
 :heavy_check_mark: <i>Arrow Function Parentheses</i> · <b>always</b>\
-:x: <b>false</b> · <i>Bracket Line</i>\
+:x: <i>Bracket Line</i> · <b>false</b>\
 :heavy_check_mark: <i>Bracket Spacing</i> · <b>true</b>\
 :heavy_check_mark: <i>End of Line</i><b>lf</b> · \
 :heavy_check_mark: <i>Embedded Language Formatting</i> · <b>auto</b>\
