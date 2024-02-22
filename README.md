@@ -4,11 +4,11 @@
 
 - [x] React - v18.2.0
 - [ ] Create src folder structure and comment each folder with its purpose
-- [x] Install and configure code formatting tool - Prittier (v3.2.5)
-- [ ] Install and configure code quality tool - ESlint (v8.56.0)
-- [ ] Install and configure Test environment - Jest (v27.5.1)
-- [ ] Install and configure Web Bundler compatible with Jest - Webpack (v5.90.3)
-- [ ] Install and configure centralized store library - Redux (v)
+- [x] Install and configure code formatting tool - Prittier (<i>v3.2.5</i>)
+- [ ] Install and configure code quality tool - ESlint (<i>v8.56.0</i>)
+- [ ] Install and configure Test environment - Jest (<i>v27.5.1</i>)
+- [ ] Install and configure Web Bundler compatible with Jest - Webpack (<i>v5.90.3</i>)
+- [ ] Install and configure centralized store library - Redux (<i>v0.0.0</i>)
 - [ ] Create custom single web page as a demonstration with documentation
 - [ ] Create Dockerfile and docker-compose
 
