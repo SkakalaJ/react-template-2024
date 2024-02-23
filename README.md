@@ -1,6 +1,6 @@
 # To Do
 
-## ReactJS Template 2024 - v1.0.0 by Georgeo
+## ReactJS Template 2024 - v1.0.0 (by Georgeo)
 
 - [x] React - v18.2.0
 - [ ] Create src folder structure and comment each folder with its purpose
