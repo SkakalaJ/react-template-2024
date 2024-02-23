@@ -2,15 +2,15 @@
 
 ## ReactJS Template 2024 - v1.0.0 (by Georgeo)
 
-- [x] React - v18.2.0
+- [x] <b>React - v18.2.0</b>
 - [ ] Create src folder structure and comment each folder with its purpose
-- [x] Install and configure code formatting tool - Prittier (<i>v3.2.5</i>)
-- [x] Install and configure code quality tool - ESlint (<i>v8.56.0</i>)
-- [x] Install and configure Test environment - Jest (<i>v27.5.1</i>)
-- [ ] Install and configure Web Bundler compatible with Jest - Webpack (<i>v5.90.3</i>)
-- [ ] Install and configure centralized store library - Redux (<i>v0.0.0</i>)
+- [x] Install and configure code formatting tool - <b>Prittier (<i>v3.2.5</i>)</b>
+- [x] Install and configure code quality tool - <b>ESlint (<i>v8.56.0</i>)</b>
+- [x] Install and configure Test environment - <b>Jest (<i>v27.5.1</i>)</b>
+- [ ] Install and configure Web Bundler compatible with Jest - <b>Webpack (<i>v5.90.3</i>)</b>
+- [ ] Install and configure centralized store library - <b>Redux (<i>v0.0.0</i>)</b>
 - [ ] Create custom single web page as a demonstration with documentation
-- [ ] Create Dockerfile and docker-compose
+- [ ] Create <b>Dockerfile</b> and <b>docker-compose</b>
 
 ### Prittier default conf
 
