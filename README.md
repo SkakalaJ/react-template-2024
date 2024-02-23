@@ -57,11 +57,11 @@
 
 #### Jest modification for Webpack
 
-&emsp;&emsp; <i>:white_check_mark: </i>\
-&emsp;&emsp; <i>:white_check_mark: </i>\
-&emsp;&emsp; <i>:white_check_mark: </i>\
-&emsp;&emsp; <i>:white_check_mark: </i>\
-&emsp;&emsp; <i>:white_check_mark: </i>
+&emsp;&emsp; :white_check_mark: <i>aaa</i>\
+&emsp;&emsp; :white_check_mark: <i></i>\
+&emsp;&emsp; :white_check_mark: <i></i>\
+&emsp;&emsp; :white_check_mark: <i></i>\
+&emsp;&emsp; :white_check_mark: <i></i>
 
 ### Webpack default conf
 
