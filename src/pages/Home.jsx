@@ -2,8 +2,8 @@
 
 import Intro from 'src/features/main/Intro';
 
-const Main = () => {
+const Home = () => {
 	return <Intro />;
 };
 
-export default Main;
+export default Home;
