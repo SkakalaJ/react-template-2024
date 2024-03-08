@@ -60,7 +60,7 @@ const FadeInOut = (props) => {
 	return (
 		<>
 			<style>{getStyle()}</style>
-			<div className={getClassName()}>{props.children}</div>
+			<div className={getClassName()} style={{position: props.position}}>{props.children}</div>
 		</>
 	);
 };
@@ -69,6 +69,7 @@ FadeInOut.defaultProps = {
 	action: 'fade-in-out',
 	duration: 1,
 	delay: 0,
+	position: 'relative',
 };
 
 FadeInOut.propTypes = {
@@ -76,6 +77,7 @@ FadeInOut.propTypes = {
 	delay: PropTypes.number,
 	action: PropTypes.string,
 	children: PropTypes.node.isRequired,
+	position: PropTypes.string,
 };
 
 export default FadeInOut;

@@ -19,7 +19,17 @@ const Intro = () => {
 				loop={false}
 				style={{ objectFit: 'cover' }}
 			></Video>
-			<Button text='Intro skip' style={{ position: 'absolute', top: '20px', right: '20px' }} />
+
+			
+			<FadeInOut
+				action='fade-out'
+				duration={2}
+				delay={10}
+				position='absolute'
+			>
+				<Button text='Intro skip' style={{ position: 'absolute', top: '20px', right: '20px' }} />
+			</FadeInOut>
+
 			<div
 				className='absolute-center-position'
 				style={{ top: '63%' }}
@@ -67,6 +77,7 @@ const Intro = () => {
 					</FadeInOut>
 				</FadeInOut>
 			</div>
+			
 			<div
 				className='absolute-right-bottom-position'
 				style={{ right: '20px', bottom: '20px' }}

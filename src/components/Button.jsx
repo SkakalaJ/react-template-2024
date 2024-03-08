@@ -8,6 +8,7 @@ const Button = (props) => {
 		<div
 			className={`button ${props.className}`}
 			style={props.style}
+			onClick={props.onClick}
 		>
 			<Text
 				tag={'a'}
@@ -22,6 +23,7 @@ Button.defaultProps = {
 	style: {},
 	className: '',
 	text: 'Lorem',
+	onClick: () => {console.log('Button Clicked');}
 };
 
 Button.propTypes = {
@@ -29,6 +31,7 @@ Button.propTypes = {
 	style: PropTypes.object,
 	className: PropTypes.string,
 	text: PropTypes.string,
+	onClick: PropTypes.func
 };
 
 export default Button;
