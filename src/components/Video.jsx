@@ -1,5 +1,4 @@
 /** @format */
-
 import PropTypes from 'prop-types';
 
 const Video = (props) => {
@@ -14,6 +13,7 @@ const Video = (props) => {
 			controls={props.controls}
 			width={props.width}
 			height={props.height}
+			onPlay={props.onPlay}
 		>
 			<source
 				src={props.src}
@@ -32,6 +32,7 @@ Video.defaultProps = {
 	controls: true,
 	width: '100%',
 	height: '100%',
+	onPlay: () => {},
 };
 
 Video.propTypes = {
@@ -44,6 +45,7 @@ Video.propTypes = {
 	controls: PropTypes.bool,
 	width: PropTypes.string,
 	height: PropTypes.string,
+	onPlay: PropTypes.func,
 	src: PropTypes.string.isRequired,
 	videoType: PropTypes.string.isRequired,
 };

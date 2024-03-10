@@ -1,5 +1,10 @@
 /** @format */
 
+.fade-element {
+	height: 100%;
+	height: -webkit-fill-available;
+}
+
 @-webkit-keyframes fadeinout {
 	0%,
 	100% {

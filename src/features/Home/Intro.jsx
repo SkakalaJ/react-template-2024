@@ -1,43 +1,36 @@
 /** @format */
 
+import { useDispatch } from 'react-redux';
+
 // Components
-import Video from 'src/components/Video';
 import Text from 'src/components/Text';
 import FadeInOut from 'src/components/FadeInOut';
 import Button from 'src/components/Button';
 
-// Assets
-import SunBackground from 'src/assets/videos/background/pexels-matthias-groeneveld-17929837_(1080p).mp4';
+//Redux
+import { skipIntro } from 'src/features/Home/homeSlice';
 
 const Intro = () => {
-	return (
-		<div style={{ height: 'inherit', display: 'flex' }}>
-			<Video
-				src={SunBackground}
-				videoType='video/mp4'
-				controls={false}
-				loop={false}
-				style={{ objectFit: 'cover' }}
-			></Video>
+	const dispatch = useDispatch();
 
-			
+	return (
+		<>
 			<FadeInOut
 				action='fade-out'
 				duration={2}
 				delay={10}
 				position='absolute'
+				onAnimationEnd={() => dispatch(skipIntro())}
 			>
-				<Button text='Intro skip' style={{ position: 'absolute', top: '20px', right: '20px' }} />
-			</FadeInOut>
+				<Button
+					text='Intro skip'
+					style={{ position: 'absolute', top: '20px', right: '20px' }}
+					onClick={() => dispatch(skipIntro())}
+				/>
 
-			<div
-				className='absolute-center-position'
-				style={{ top: '63%' }}
-			>
-				<FadeInOut
-					action='fade-out'
-					duration={2}
-					delay={10}
+				<div
+					className='absolute-center-position'
+					style={{ top: '63%' }}
 				>
 					<FadeInOut
 						action='fade-in'
@@ -75,9 +68,9 @@ const Intro = () => {
 							text='- Carl Jung'
 						/>
 					</FadeInOut>
-				</FadeInOut>
-			</div>
-			
+				</div>
+			</FadeInOut>
+
 			<div
 				className='absolute-right-bottom-position'
 				style={{ right: '20px', bottom: '20px' }}
@@ -88,7 +81,7 @@ const Intro = () => {
 					text={'Video by Matthias Groeneveld from Pexels'}
 				/>
 			</div>
-		</div>
+		</>
 	);
 };
 

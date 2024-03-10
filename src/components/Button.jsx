@@ -1,7 +1,7 @@
 /** @format */
 
 import PropTypes from 'prop-types';
-import Text from './Text';
+import Text from 'src/components/Text';
 
 const Button = (props) => {
 	return (
@@ -23,7 +23,7 @@ Button.defaultProps = {
 	style: {},
 	className: '',
 	text: 'Lorem',
-	onClick: () => {console.log('Button Clicked');}
+	onClick: () => {},
 };
 
 Button.propTypes = {
@@ -31,7 +31,7 @@ Button.propTypes = {
 	style: PropTypes.object,
 	className: PropTypes.string,
 	text: PropTypes.string,
-	onClick: PropTypes.func
+	onClick: PropTypes.func,
 };
 
 export default Button;

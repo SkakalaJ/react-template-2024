@@ -22,13 +22,13 @@ const FadeInOut = (props) => {
 	const getClassName = () => {
 		switch (props.action) {
 			case 'fade-in-out':
-				return `fade-in-out-element-${uuid}`;
+				return `fade-in-out-element-${uuid} fade-element`;
 			case 'fade-in':
-				return `fade-in-element-${uuid}`;
+				return `fade-in-element-${uuid} fade-element`;
 			case 'fade-out':
-				return `fade-out-element-${uuid}`;
+				return `fade-out-element-${uuid} fade-element`;
 			default:
-				return `fade-in-out-element-${uuid}`;
+				return 'fade-element';
 		}
 	};
 
@@ -60,7 +60,16 @@ const FadeInOut = (props) => {
 	return (
 		<>
 			<style>{getStyle()}</style>
-			<div className={getClassName()} style={{position: props.position}}>{props.children}</div>
+			<div
+				className={getClassName()}
+				style={{ position: props.position }}
+				onAnimationEnd={(e) => {
+					e.stopPropagation();
+					props.onAnimationEnd();
+				}}
+			>
+				{props.children}
+			</div>
 		</>
 	);
 };
@@ -70,6 +79,7 @@ FadeInOut.defaultProps = {
 	duration: 1,
 	delay: 0,
 	position: 'relative',
+	onAnimationEnd: () => {},
 };
 
 FadeInOut.propTypes = {
@@ -78,6 +88,7 @@ FadeInOut.propTypes = {
 	action: PropTypes.string,
 	children: PropTypes.node.isRequired,
 	position: PropTypes.string,
+	onAnimationEnd: PropTypes.func,
 };
 
 export default FadeInOut;
