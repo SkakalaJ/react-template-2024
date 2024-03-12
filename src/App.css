@@ -52,7 +52,7 @@ div {
 	opacity: 0.35;
 }
 
-.button {
+.button-default {
 	width: fit-content;
 	padding: 10px 15px 14px 15px;
 	border-radius: 24px;
@@ -81,8 +81,12 @@ div {
 	will-change: background-color;
 }
 
-.button:hover {
+.button-default:hover {
 	background-color: rgb(255, 255, 255, 1);
+}
+
+.button-circular {
+	border-radius: 50%;
 }
 
 /* .zoom-contents-transform {

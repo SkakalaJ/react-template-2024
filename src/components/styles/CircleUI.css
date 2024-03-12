@@ -1,0 +1,29 @@
+/** @format */
+
+.circle-outer {
+	left: 50%;
+	top: 50%;
+	position: absolute;
+}
+
+.circle-outer {
+	width: 300px;
+	height: 300px;
+	border-radius: 50%;
+	background-color: #2087fc;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin: 0 auto;
+}
+
+.circle-inner {
+	width: 100px;
+	height: 100px;
+	border-radius: 50%;
+	background-color: #fc2020;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin: 0 auto;
+}

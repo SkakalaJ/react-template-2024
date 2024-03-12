@@ -21,7 +21,7 @@ const Button = (props) => {
 Button.defaultProps = {
 	id: '',
 	style: {},
-	className: '',
+	className: 'button-default',
 	text: 'Lorem',
 	onClick: () => {},
 };

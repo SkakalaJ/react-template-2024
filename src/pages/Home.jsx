@@ -10,8 +10,9 @@ import Intro from 'src/features/Home/Intro';
 import Video from 'src/components/Video';
 import Button from 'src/components/Button';
 import FadeInOut from 'src/components/FadeInOut';
+import CircleUI from 'src/components/CircleUI';
 // Layouts
-import Circular from 'src/layouts/Circular';
+// import Circular from 'src/layouts/Circular';
 // Redux
 import { playIntro, setIntroVideoId } from 'src/features/Home/homeSlice';
 
@@ -31,7 +32,8 @@ const Home = () => {
 		}
 
 		if (!intro.play) {
-			return <Circular style={{ position: 'absolute', top: '50%', left: '50%', zIndex: 1 }}/>;
+			// return <Circular style={{ position: 'absolute', top: '50%', left: '50%', zIndex: 1 }}/>;
+			return <CircleUI />;
 		}
 	};
 
