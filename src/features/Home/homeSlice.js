@@ -6,7 +6,7 @@ export const homeSlice = createSlice({
 	name: 'home',
 	initialState: {
 		intro: {
-			play: false,
+			play: true,
 			videoId: null,
 		},
 	},

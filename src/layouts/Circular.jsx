@@ -2,7 +2,7 @@
 
 import PropTypes from 'prop-types';
 import { useEffect, useState } from 'react';
-import Button from 'src/components/Button/Button';
+import Button from 'src/components/Button';
 
 const Circular = (props) => {
 	const [buttons, setButtons] = useState([]);

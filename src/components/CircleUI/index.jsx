@@ -2,7 +2,7 @@
 import PropTypes from 'prop-types';
 
 // styles
-import './CircleUI.css';
+import './index.css';
 import { useEffect } from 'react';
 
 const CircleUI = (props) => {

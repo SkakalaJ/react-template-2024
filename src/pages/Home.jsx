@@ -7,12 +7,14 @@ import SunBackground from 'src/assets/videos/background/pexels-matthias-groeneve
 //Features
 import Intro from 'src/features/Home/Intro';
 // Components
-import Video from 'src/components/Video/Video';
-import Button from 'src/components/Button/Button';
-import FadeInOut from 'src/components/FadeInOut/FadeInOut';
-import CircleUI from 'src/components/CircleUI/CircleUI';
-import Text from 'src/components/Text/Text';
-import Header from 'src/components/Header/Header';
+import Video from 'src/components/Video';
+import Button from 'src/components/Button';
+import FadeInOut from 'src/components/FadeInOut';
+import CircleUI from 'src/components/CircleUI';
+import Text from 'src/components/Text';
+import Header from 'src/components/Header';
+import Footer from 'src/components/Footer';
+import Content from 'src/components/Content';
 // Layouts
 // import Circular from 'src/layouts/Circular';
 // Redux
@@ -56,18 +58,21 @@ const Home = () => {
 				loop={false}
 				style={{ objectFit: 'cover', position: 'fixed' }}
 			/>
-			<div
-				className='absolute-right-bottom-position'
-				style={{ right: '20px', bottom: '20px' }}
-			>
+
+			<Content>
+				{getFeature()}
+			</Content>
+
+			<Footer justifyContent='flex-end'>
 				<Text
 					tag='p'
 					className='credits-text'
 					text={'Video by Matthias Groeneveld from Pexels'}
+					style={{ margin: '25px' }}
 				/>
-			</div>
+			</Footer>
 
-			{getFeature()}
+			
 
 			{intro.play ? null : (
 				<Header>

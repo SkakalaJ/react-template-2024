@@ -1,7 +1,9 @@
 /** @format */
 
 import PropTypes from 'prop-types';
-import Text from 'src/components/Text/Text';
+import Text from 'src/components/Text';
+
+import './index.css';
 
 const Button = (props) => {
 	return (

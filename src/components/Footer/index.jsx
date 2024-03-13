@@ -1,11 +1,12 @@
 /** @format */
+
 import PropTypes from 'prop-types';
 // styles
-import './Header.css';
+import './index.css';
 
-const Header = (props) => {
+const Footer = (props) => {
 	return (
-		<header
+		<footer
 			className={props.className}
 			style={{
 				...props.style,
@@ -14,17 +15,17 @@ const Header = (props) => {
 			}}
 		>
 			{props.children}
-		</header>
+		</footer>
 	);
 };
 
-Header.defaultProps = {
+Footer.defaultProps = {
 	style: {},
-	height: '75px',
 	justifyContent: 'center',
+	className: 'footer-container-default',
 };
 
-Header.propTypes = {
+Footer.propTypes = {
 	// required
 	children: PropTypes.node.isRequired,
 	// optional
@@ -35,4 +36,4 @@ Header.propTypes = {
 	justifyContent: PropTypes.string, // 'center', 'end', 'flex-start', 'flex-end', 'left', 'normal', 'right', 'space-around', 'space-between', 'space-evenly', 'start', 'stretch', 'inherit', 'initial', 'revert', 'revert-layer', 'unset'
 };
 
-export default Header;
+export default Footer;

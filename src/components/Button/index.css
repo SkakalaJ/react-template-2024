@@ -1,0 +1,35 @@
+/** @format */
+
+.button-default {
+	width: fit-content;
+	margin: 25px;
+	padding: 10px 15px 14px 15px;
+	border-radius: 24px;
+	border-width: medium;
+	border: 1.5px solid salmon;
+	color: salmon;
+	box-shadow:
+		rgba(60, 64, 67, 0.3) 0 1px 3px 0,
+		rgba(60, 64, 67, 0.15) 0 4px 8px 3px;
+	cursor: pointer;
+	background-color: rgb(255, 255, 255, 0.2);
+	font-weight: 500;
+	justify-content: center;
+	letter-spacing: 0.25px;
+	overflow: visible;
+	max-width: 100%;
+	line-height: normal;
+	text-align: center;
+	text-transform: none;
+	transition:
+		box-shadow 280ms cubic-bezier(0.4, 0, 0.2, 1),
+		background-color 500ms linear;
+	user-select: none;
+	-webkit-user-select: none;
+	touch-action: manipulation;
+	will-change: background-color;
+}
+
+.button-default:hover {
+	background-color: rgb(255, 255, 255, 1);
+}

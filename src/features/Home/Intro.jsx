@@ -3,10 +3,10 @@
 import { useDispatch } from 'react-redux';
 
 // Components
-import Text from 'src/components/Text/Text';
-import FadeInOut from 'src/components/FadeInOut/FadeInOut';
-import Button from 'src/components/Button/Button';
-import Header from 'src/components/Header/Header';
+import Text from 'src/components/Text';
+import FadeInOut from 'src/components/FadeInOut';
+import Button from 'src/components/Button';
+import Header from 'src/components/Header';
 
 //Redux
 import { skipIntro } from 'src/features/Home/homeSlice';
