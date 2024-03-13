@@ -1,6 +1,6 @@
 /** @format */
 
-import Home from './pages/Home';
+import Home from './pages/home';
 import './App.css';
 
 function App() {

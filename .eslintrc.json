@@ -20,12 +20,6 @@
 		"indent": ["error", "tab", { "SwitchCase": 1 }],
 		"linebreak-style": ["error", "unix"],
 		"quotes": ["error", "single"],
-		"semi": ["error", "always"],
-		"no-restricted-imports": [
-			"error",
-			{
-				"patterns": ["src/features/*/*"],
-			},
-	],
+		"semi": ["error", "always"]
 	}
 }
