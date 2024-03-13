@@ -7,10 +7,12 @@ import SunBackground from 'src/assets/videos/background/pexels-matthias-groeneve
 //Features
 import Intro from 'src/features/Home/Intro';
 // Components
-import Video from 'src/components/Video';
-import Button from 'src/components/Button';
-import FadeInOut from 'src/components/FadeInOut';
-import CircleUI from 'src/components/CircleUI';
+import Video from 'src/components/Video/Video';
+import Button from 'src/components/Button/Button';
+import FadeInOut from 'src/components/FadeInOut/FadeInOut';
+import CircleUI from 'src/components/CircleUI/CircleUI';
+import Text from 'src/components/Text/Text';
+import Header from 'src/components/Header/Header';
 // Layouts
 // import Circular from 'src/layouts/Circular';
 // Redux
@@ -52,23 +54,35 @@ const Home = () => {
 				videoType='video/mp4'
 				controls={false}
 				loop={false}
-				style={{ objectFit: 'cover' }}
+				style={{ objectFit: 'cover', position: 'fixed' }}
 			/>
+			<div
+				className='absolute-right-bottom-position'
+				style={{ right: '20px', bottom: '20px' }}
+			>
+				<Text
+					tag='p'
+					className='credits-text'
+					text={'Video by Matthias Groeneveld from Pexels'}
+				/>
+			</div>
 
 			{getFeature()}
 
 			{intro.play ? null : (
-				<FadeInOut
-					action='fade-in'
-					duration={0.5}
-					position='absolute'
-				>
-					<Button
-						text='Play Intro'
-						style={{ position: 'absolute', top: '20px', right: '20px' }}
-						onClick={() => playIntroButtonOnClick()}
-					/>
-				</FadeInOut>
+				<Header>
+					<FadeInOut
+						action='fade-in'
+						duration={0.5}
+						position='relative'
+					>
+						<Button
+							text='Play Intro'
+							style={{ position: 'relative', top: '20px', right: '20px' }}
+							onClick={() => playIntroButtonOnClick()}
+						/>
+					</FadeInOut>
+				</Header>
 			)}
 		</div>
 	);

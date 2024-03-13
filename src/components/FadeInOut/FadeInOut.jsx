@@ -1,7 +1,7 @@
 /** @format */
 
 import PropTypes from 'prop-types';
-import './styles/FadeInOut.css';
+import './FadeInOut.css';
 
 const FadeInOut = (props) => {
 	const uuid = crypto.getRandomValues(new Uint32Array(5))[0];

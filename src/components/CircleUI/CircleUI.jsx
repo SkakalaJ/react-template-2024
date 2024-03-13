@@ -2,7 +2,7 @@
 import PropTypes from 'prop-types';
 
 // styles
-import './styles/CircleUI.css';
+import './CircleUI.css';
 import { useEffect } from 'react';
 
 const CircleUI = (props) => {
@@ -10,11 +10,7 @@ const CircleUI = (props) => {
 		console.log('LOADED');
 	}, []);
 
-	return (
-		<div className='circle-outer'>
-			<div className='circle-inner'></div>
-		</div>
-	);
+	return <div className='circle'></div>;
 };
 
 CircleUI.defaultProps = {};

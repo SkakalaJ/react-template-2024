@@ -3,9 +3,10 @@
 import { useDispatch } from 'react-redux';
 
 // Components
-import Text from 'src/components/Text';
-import FadeInOut from 'src/components/FadeInOut';
-import Button from 'src/components/Button';
+import Text from 'src/components/Text/Text';
+import FadeInOut from 'src/components/FadeInOut/FadeInOut';
+import Button from 'src/components/Button/Button';
+import Header from 'src/components/Header/Header';
 
 //Redux
 import { skipIntro } from 'src/features/Home/homeSlice';
@@ -18,15 +19,17 @@ const Intro = () => {
 			<FadeInOut
 				action='fade-out'
 				duration={2}
-				delay={10}
+				delay={300}
 				position='absolute'
 				onAnimationEnd={() => dispatch(skipIntro())}
 			>
-				<Button
-					text='Intro skip'
-					style={{ position: 'absolute', top: '20px', right: '20px' }}
-					onClick={() => dispatch(skipIntro())}
-				/>
+				<Header justifyContent='flex-end'>
+					<Button
+						text='Intro skip'
+						style={{ marginRight: '25px' }}
+						onClick={() => dispatch(skipIntro())}
+					/>
+				</Header>
 
 				<div
 					className='absolute-center-position'
@@ -70,17 +73,6 @@ const Intro = () => {
 					</FadeInOut>
 				</div>
 			</FadeInOut>
-
-			<div
-				className='absolute-right-bottom-position'
-				style={{ right: '20px', bottom: '20px' }}
-			>
-				<Text
-					tag='p'
-					className='credits-text'
-					text={'Video by Matthias Groeneveld from Pexels'}
-				/>
-			</div>
 		</>
 	);
 };
