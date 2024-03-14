@@ -104,8 +104,7 @@ const Text = (props) => {
 };
 
 Text.defaultProps = {
-	id: '',
-	className: '',
+	target: '_blank',
 	style: {},
 	tag: 'p',
 	text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
@@ -116,6 +115,8 @@ Text.propTypes = {
 	className: PropTypes.string,
 	style: PropTypes.object,
 	tag: PropTypes.string,
+	href: PropTypes.string,
+	target: PropTypes.string,
 	text: PropTypes.string.isRequired,
 };
 

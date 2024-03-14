@@ -37,10 +37,28 @@ div {
 }
 
 .background-grandient {
-	background: rgb(255,188,0);
-	background: -moz-linear-gradient(30deg, rgba(255,188,0,1) 0%, rgba(255,87,51,1) 35%, rgba(255,87,51,1) 65%, rgba(255,188,0,1) 100%);
-	background: -webkit-linear-gradient(30deg, rgba(255,188,0,1) 0%, rgba(255,87,51,1) 35%, rgba(255,87,51,1) 65%, rgba(255,188,0,1) 100%);
-	background: linear-gradient(30deg, rgba(255,188,0,1) 0%, rgba(255,87,51,1) 35%, rgba(255,87,51,1) 65%, rgba(255,188,0,1) 100%);
+	background: rgb(255, 188, 0);
+	background: -moz-linear-gradient(
+		30deg,
+		rgba(255, 188, 0, 1) 0%,
+		rgba(255, 87, 51, 1) 35%,
+		rgba(255, 87, 51, 1) 65%,
+		rgba(255, 188, 0, 1) 100%
+	);
+	background: -webkit-linear-gradient(
+		30deg,
+		rgba(255, 188, 0, 1) 0%,
+		rgba(255, 87, 51, 1) 35%,
+		rgba(255, 87, 51, 1) 65%,
+		rgba(255, 188, 0, 1) 100%
+	);
+	background: linear-gradient(
+		30deg,
+		rgba(255, 188, 0, 1) 0%,
+		rgba(255, 87, 51, 1) 35%,
+		rgba(255, 87, 51, 1) 65%,
+		rgba(255, 188, 0, 1) 100%
+	);
 	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#ffbc00",endColorstr="#ffbc00",GradientType=1);
 }
 

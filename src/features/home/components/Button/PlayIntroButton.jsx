@@ -9,7 +9,7 @@ import FadeInOut from 'src/components/FadeInOut';
 //Redux
 import { playIntro } from 'src/features/home/reducers/homeSlice';
 
-const SkipIntroButton = () => {
+const PlayIntroButton = () => {
 	const intro = useSelector((state) => state.home.intro);
 
 	const dispatch = useDispatch();
@@ -37,4 +37,4 @@ const SkipIntroButton = () => {
 	);
 };
 
-export default SkipIntroButton;
+export default PlayIntroButton;
