@@ -21,6 +21,7 @@ const AuthorCreditsText = () => {
 						}
 					/>
 				</div>
+
 				<div>
 					<Text
 						tag='a'
