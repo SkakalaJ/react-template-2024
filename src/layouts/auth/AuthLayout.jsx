@@ -19,14 +19,15 @@ const AuthLayout = () => {
 	};
 
 	return (
-		<div className='background-gradient' style={{ height: 'inherit', width: '100%' }}>
+		<div
+			className='background-gradient'
+			style={{ height: 'inherit', width: '100%' }}
+		>
 			<Header justifyContent='flex-end'>{getHeaderFeatures()}</Header>
 
 			<Content>{getContentFeatures()}</Content>
 
-			<Footer justifyContent='flex-end'>
-				{getFooterFeatures()}
-			</Footer>
+			<Footer justifyContent='flex-end'>{getFooterFeatures()}</Footer>
 		</div>
 	);
 };
