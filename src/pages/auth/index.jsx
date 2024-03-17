@@ -1,7 +1,7 @@
 /** @format */
 
 // Layouts
-import AuthLayout from 'src/layouts/home/AuthLayout';
+import AuthLayout from 'src/layouts/auth/AuthLayout';
 
 const Auth = () => {
 	return (
