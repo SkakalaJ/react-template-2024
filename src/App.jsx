@@ -3,6 +3,7 @@
 import Home from './pages/home';
 import Auth from './pages/auth';
 import { Routes, Route } from 'react-router-dom';
+import AuthRoutes from 'src/features/auth/routes';
 import './App.css';
 
 function App() {
@@ -20,16 +21,7 @@ function App() {
 				path='auth'
 				element={<Auth />}
 			>
-				<Route index element={<Auth />} />
-				<Route
-					path='sign-in'
-					element={<Auth />}
-				/>
-				<Route
-					path='sign-up'
-					element={<Auth />}
-				/>
-				<Route path="*" element={<Auth />} />
+				<AuthRoutes />
 			</Route>
 			<Route
 				path='*'

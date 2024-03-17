@@ -4,30 +4,27 @@ import Footer from 'src/components/Footer';
 import Content from 'src/components/Content';
 
 import Header from 'src/components/Header';
+import HeaderElements from 'src/features/auth/components/HeaderElements';
+import ContentElements from 'src/features/auth/components/ContentElements';
+import FooterElements from 'src/features/auth/components/FooterElements';
 
 const AuthLayout = () => {
-	const getHeaderFeatures = () => {
-		return 'Header Features';
-	};
-
-	const getContentFeatures = () => {
-		return 'Content Features';
-	};
-
-	const getFooterFeatures = () => {
-		return 'Footer Features';
-	};
-
 	return (
 		<div
 			className='background-gradient'
 			style={{ height: 'inherit', width: '100%' }}
 		>
-			<Header justifyContent='flex-end'>{getHeaderFeatures()}</Header>
+			<Header justifyContent='flex-end'>
+				<HeaderElements />
+			</Header>
 
-			<Content>{getContentFeatures()}</Content>
+			<Content>
+				<ContentElements />
+			</Content>
 
-			<Footer justifyContent='flex-end'>{getFooterFeatures()}</Footer>
+			<Footer justifyContent='flex-end'>
+				<FooterElements />
+			</Footer>
 		</div>
 	);
 };
