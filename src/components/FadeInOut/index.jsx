@@ -1,5 +1,7 @@
 /** @format */
 
+import { Fragment } from 'react';
+
 import PropTypes from 'prop-types';
 import './index.css';
 
@@ -58,7 +60,7 @@ const FadeInOut = (props) => {
     `;
 
 	return (
-		<>
+		<Fragment>
 			<style>{getStyle()}</style>
 			<div
 				className={getClassName()}
@@ -70,7 +72,7 @@ const FadeInOut = (props) => {
 			>
 				{props.children}
 			</div>
-		</>
+		</Fragment>
 	);
 };
 

@@ -2,11 +2,11 @@
 // Components
 import Footer from 'src/components/Footer';
 import Content from 'src/components/Content';
+import { Outlet } from 'react-router-dom';
 
 import Header from 'src/components/Header';
-import HeaderElements from 'src/features/auth/components/HeaderElements';
-import ContentElements from 'src/features/auth/components/ContentElements';
-import FooterElements from 'src/features/auth/components/FooterElements';
+import HeaderElements from 'src/features/auth/components/Header/HeaderElements';
+import FooterElements from 'src/features/auth/components/Footer/FooterElements';
 
 const AuthLayout = () => {
 	return (
@@ -19,7 +19,7 @@ const AuthLayout = () => {
 			</Header>
 
 			<Content>
-				<ContentElements />
+				<Outlet />
 			</Content>
 
 			<Footer justifyContent='flex-end'>

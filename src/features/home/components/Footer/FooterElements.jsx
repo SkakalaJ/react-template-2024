@@ -1,6 +1,7 @@
 /** @format */
 
 import { useSelector } from 'react-redux';
+import { Fragment } from 'react';
 
 // Components
 import PlayIntroButton from 'src/features/home/components/Button/PlayIntroButton';
@@ -20,11 +21,11 @@ const FooterElements = () => {
 	};
 
 	return (
-		<>
+		<Fragment>
 			<AuthorCreditsText />
 			<VideoCreditsText />
 			{getFooterFeatures()}
-		</>
+		</Fragment>
 	);
 };
 

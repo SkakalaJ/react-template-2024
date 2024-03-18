@@ -8,9 +8,9 @@ import Footer from 'src/components/Footer';
 import Content from 'src/components/Content';
 
 import Header from 'src/components/Header';
-import HeaderElements from 'src/features/home/components/HeaderElements';
-import FooterElements from 'src/features/home/components/FooterElements';
-import ContentElements from 'src/features/home/components/ContentElements';
+import HeaderElements from 'src/features/home/components/Header/HeaderElements';
+import FooterElements from 'src/features/home/components/Footer/FooterElements';
+import ContentElements from 'src/features/home/components/Content/ContentElements';
 
 const HomeLayout = () => {
 	return (

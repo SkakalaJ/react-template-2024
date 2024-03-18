@@ -2,6 +2,8 @@
 
 import { useSelector } from 'react-redux';
 
+import { Fragment } from 'react';
+
 // Components
 import SignInButton from 'src/features/home/components/Button/SignInButton';
 import GithubButton from 'src/features/home/components/Button/GithubButton';
@@ -15,10 +17,10 @@ const HeaderElements = () => {
 		}
 
 		return (
-			<>
+			<Fragment>
 				<GithubButton />
 				<SignInButton />
-			</>
+			</Fragment>
 		);
 	};
 

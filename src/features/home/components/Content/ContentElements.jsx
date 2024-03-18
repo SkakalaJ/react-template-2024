@@ -1,6 +1,7 @@
 /** @format */
 
 import { useSelector } from 'react-redux';
+import { Fragment } from 'react';
 
 // Components
 import QuoteText from 'src/features/home/components/Text/QuoteText';
@@ -16,7 +17,7 @@ const ContentElements = () => {
 		// return 'Main Layout';
 	};
 
-	return <>{getContentFeatures()}</>;
+	return <Fragment>{getContentFeatures()}</Fragment>;
 };
 
 export default ContentElements;
