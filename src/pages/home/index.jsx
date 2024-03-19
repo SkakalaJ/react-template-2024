@@ -3,8 +3,8 @@
 // Layouts
 import HomeLayout from 'src/layouts/home/HomeLayout';
 
-const Home = () => {
+function  Home() {
 	return <HomeLayout />;
-};
+}
 
 export default Home;

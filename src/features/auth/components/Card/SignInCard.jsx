@@ -3,12 +3,7 @@
 // import { Outlet } from "react-router-dom";
 
 const SignInCard = () => {
-
-	return (
-		<>
-			Sign In
-		</>
-	);
+	return <>Sign In</>;
 };
 
 export default SignInCard;
