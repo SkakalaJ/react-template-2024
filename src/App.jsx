@@ -1,5 +1,5 @@
 /** @format */
-import { Routes, Route } from 'react-router-dom';
+// import { Routes, Route } from 'react-router-dom';
 import HomePage from './pages/home';
 import AuthPage from './pages/auth';
 import './App.css';
@@ -14,14 +14,11 @@ import { Fragment } from 'react';
 function App() {
 	return (
 		<Fragment>
-			<AuthRoutes RootComponent={<AuthPage />} />
-			<HomeRoutes RootComponent={<HomePage />} />
-			<Routes>
-				<Route
-					path='*'
-					element={<HomePage />}
-				/>
-			</Routes>
+			<AuthRoutes RootPage={<AuthPage />} />
+			<HomeRoutes RootPage={<HomePage />} />
+			{/* <Routes>
+				
+			</Routes> */}
 		</Fragment>
 	);
 }

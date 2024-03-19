@@ -8,7 +8,7 @@ import './index.css';
 const Button = (props) => {
 	return (
 		<div
-			className={`button ${props.className}`}
+			className={`${props.className}`}
 			style={props.style}
 			onClick={props.onClick}
 		>

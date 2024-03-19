@@ -4,23 +4,27 @@ import { Routes, Route } from 'react-router-dom';
 
 import PropTypes from 'prop-types';
 
-const HomeRoutes = ({ RootComponent }) => {
+const HomeRoutes = ({ RootPage }) => {
 	return (
 		<Routes>
 			<Route
 				index
-				element={RootComponent}
+				element={RootPage}
 			/>
 			<Route
 				path='/'
-				element={RootComponent}
+				element={RootPage}
+			/>
+			<Route
+				path='*'
+				element={RootPage}
 			/>
 		</Routes>
 	);
 };
 
-export default HomeRoutes;
-
 HomeRoutes.propTypes = {
-	RootComponent: PropTypes.element.isRequired,
+	RootPage: PropTypes.element.isRequired,
 };
+
+export default HomeRoutes;

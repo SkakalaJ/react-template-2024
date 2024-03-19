@@ -2,6 +2,7 @@
 
 .button-default {
 	width: fit-content;
+	min-width: 72px;
 	margin: 25px;
 	padding: 10px 15px 14px 15px;
 	border-radius: 24px;
