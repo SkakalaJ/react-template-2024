@@ -32,7 +32,25 @@ Header.propTypes = {
 	className: PropTypes.string,
 	style: PropTypes.object,
 	height: PropTypes.string,
-	justifyContent: PropTypes.string, // 'center', 'end', 'flex-start', 'flex-end', 'left', 'normal', 'right', 'space-around', 'space-between', 'space-evenly', 'start', 'stretch', 'inherit', 'initial', 'revert', 'revert-layer', 'unset'
+	justifyContent: PropTypes.oneOf([
+		'center',
+		'end',
+		'flex-start',
+		'flex-end',
+		'left',
+		'normal',
+		'right',
+		'space-around',
+		'space-between',
+		'space-evenly',
+		'start',
+		'stretch',
+		'inherit',
+		'initial',
+		'revert',
+		'revert-layer',
+		'unset',
+	]),
 };
 
 export default Header;

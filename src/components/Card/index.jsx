@@ -7,7 +7,12 @@ const Card = (props) => {
 	return (
 		<div
 			className={`${props.className}`}
-			style={props.style}
+			style={{
+				...props.style,
+				height: props.height,
+				width: props.width,
+				flexDirection: props.flexDirection,
+			}}
 		>
 			{props.children}
 		</div>
@@ -18,6 +23,7 @@ Card.defaultProps = {
 	id: '',
 	style: {},
 	className: 'card-default',
+	flexDirection: 'column',
 };
 
 Card.propTypes = {
@@ -25,6 +31,9 @@ Card.propTypes = {
 	id: PropTypes.string,
 	style: PropTypes.object,
 	className: PropTypes.string,
+	flexDirection: PropTypes.oneOf(['column', 'row']),
+	width: PropTypes.string,
+	height: PropTypes.string,
 };
 
 export default Card;

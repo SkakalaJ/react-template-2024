@@ -114,7 +114,7 @@ Text.propTypes = {
 	id: PropTypes.string,
 	className: PropTypes.string,
 	style: PropTypes.object,
-	tag: PropTypes.string,
+	tag: PropTypes.oneOf(['p', 'h1', 'h2', 'h3', 'h4', 'h5', 'h6', 'span', 'a']),
 	href: PropTypes.string,
 	target: PropTypes.string,
 	text: PropTypes.string.isRequired,
