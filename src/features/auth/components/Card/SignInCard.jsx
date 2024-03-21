@@ -2,43 +2,65 @@
 
 import Card from 'src/components/Card';
 import Text from 'src/components/Text';
+import Input from 'src/components/Input';
 
 const CardHeader = () => {
 	return (
-		<div>
-			<h1>Sign In</h1>
+		<div style={{ padding: '20px', borderBottom: '1px solid #dadde1' }}>
+			<Text
+				tag={'h1'}
+				text={'Sign In'}
+			/>
 		</div>
 	);
 };
 
 const CardContent = () => {
 	return (
-		<div>
-			<Text
-				tag={'p'}
-				text={`Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras ut
-				posuere enim. Cras aliquam, arcu a euismod porttitor, sem enim iaculis
-				eros, eu vehicula ante est ut lorem. Vestibulum nisl ligula, sodales
-				feugiat augue at, dapibus semper libero. Phasellus suscipit sem quis
-				fermentum dignissim. Aliquam varius nec felis quis gravida. Cras
-				scelerisque luctus turpis a dictum. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras ut
-				posuere enim. Cras aliquam, arcu a euismod porttitor, sem enim iaculis
-				eros, eu vehicula ante est ut lorem. Vestibulum nisl ligula, sodales
-				feugiat augue at, dapibus semper libero. Phasellus suscipit sem quis
-				fermentum dignissim. Aliquam varius nec felis quis gravida. Cras
-				scelerisque luctus turpis a dictum.`}
+		<div style={{ padding: '20px', overflow: 'auto' }}>
+			<div style={{ display: 'flex' }}>
+				<Input
+					style={{ marginRight: '5x', marginBottom: '10px' }}
+					placeholder='First name'
+				/>
+				<Input
+					style={{ marginLeft: '5px', marginBottom: '10px' }}
+					placeholder='Last name'
+				/>
+			</div>
+			<Input
+				style={{ marginBottom: '10px' }}
+				placeholder='Mobile number or email'
 			/>
+			<Input
+				style={{ marginBottom: '10px' }}
+				placeholder='New password'
+			/>
+			<div style={{ display: 'flex' }}>
+				<hr />
+				<b>
+					<Text
+						tag={'p'}
+						text={'or register with'}
+					/>
+				</b>
+				<hr />
+			</div>
 		</div>
 	);
 };
 
 const CardFooter = () => {
 	return (
-		<div>
-			<Text
-				tag={'p'}
-				text={'Sign Up'}
-			/>
+		<div style={{ padding: '20px', borderTop: '1px solid #dadde1' }}>
+			<i>
+				<Text
+					tag={'p'}
+					text={
+						'* This is just a template. No valid data required during registration.'
+					}
+				/>
+			</i>
 		</div>
 	);
 };

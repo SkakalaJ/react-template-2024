@@ -1,36 +1,54 @@
 /** @format */
 import PropTypes from 'prop-types';
 
-const Video = (props) => {
+import './index.css';
+
+const Input = (props) => {
 	return (
-		
+		<input
+			type='text'
+			className={props.className}
+			placeholder={props.placeholder}
+			style={props.style}
+		/>
 	);
 };
 
-Video.defaultProps = {
-	autoPlay: true,
-	muted: true,
-	loop: true,
-	style: {},
-	controls: true,
-	width: '100%',
-	height: '100%',
-	onPlay: () => {},
+Input.defaultProps = {
+	id: '',
+	className: 'input-default',
+	type: 'text',
 };
 
-Video.propTypes = {
+Input.propTypes = {
 	id: PropTypes.string,
 	className: PropTypes.string,
-	autoPlay: PropTypes.bool,
-	muted: PropTypes.bool,
-	loop: PropTypes.bool,
 	style: PropTypes.object,
-	controls: PropTypes.bool,
-	width: PropTypes.string,
-	height: PropTypes.string,
-	onPlay: PropTypes.func,
-	src: PropTypes.string.isRequired,
-	videoType: PropTypes.string.isRequired,
+	type: PropTypes.oneOf([
+		'button',
+		'checkbox',
+		'color',
+		'date',
+		'datetime-local',
+		'email',
+		'file',
+		'hidden',
+		'image',
+		'month',
+		'number',
+		'password',
+		'radio',
+		'range',
+		'reset',
+		'search',
+		'submit',
+		'tel',
+		'text',
+		'time',
+		'url',
+		'week',
+	]),
+	placeholder: PropTypes.string.isRequired,
 };
 
-export default Video;
+export default Input;

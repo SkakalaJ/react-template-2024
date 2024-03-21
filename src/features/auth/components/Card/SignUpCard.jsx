@@ -5,7 +5,7 @@ import Text from 'src/components/Text';
 
 const CardHeader = () => {
 	return (
-		<div>
+		<div style={{ padding: '20px', borderBottom: '1px solid #dadde1' }}>
 			<h1>Sign Up</h1>
 		</div>
 	);
@@ -13,7 +13,7 @@ const CardHeader = () => {
 
 const CardContent = () => {
 	return (
-		<div>
+		<div style={{ padding: '20px', overflow: 'auto' }}>
 			<Text
 				tag={'p'}
 				text={`Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras ut
@@ -34,7 +34,7 @@ const CardContent = () => {
 
 const CardFooter = () => {
 	return (
-		<div>
+		<div style={{ padding: '20px', borderTop: '1px solid #dadde1' }}>
 			<Text
 				tag={'p'}
 				text={'Sign Up'}
