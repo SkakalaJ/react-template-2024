@@ -1,0 +1,29 @@
+/** @format */
+
+.button-auth {
+	width: 100%;
+	margin: 5px 0;
+	padding: 10px 15px 14px 15px;
+	border-radius: 24px;
+	border-width: medium;
+	border: 1.5px solid #ccd0d5;
+	color: black;
+	box-shadow:
+		rgba(60, 64, 67, 0.3) 0 1px 3px 0,
+		rgba(60, 64, 67, 0.15) 0 4px 8px 3px;
+	cursor: pointer;
+	background-color: transparent;
+	font-weight: 500;
+	justify-content: center;
+	letter-spacing: 0.25px;
+	overflow: visible;
+	max-width: 100%;
+	line-height: normal;
+	text-align: center;
+	user-select: none;
+	-webkit-user-select: none;
+}
+
+.button-auth:hover {
+	background-color: rgb(255, 255, 255, 1);
+}

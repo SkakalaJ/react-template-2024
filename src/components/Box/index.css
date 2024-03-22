@@ -1,0 +1,9 @@
+/** @format */
+
+.flexbox-default {
+	display: flex;
+}
+
+.flexbox-default > * {
+	flex: 1 1 0px;
+}

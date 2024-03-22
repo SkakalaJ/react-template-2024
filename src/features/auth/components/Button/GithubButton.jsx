@@ -3,7 +3,12 @@
 // Components
 import Button from 'src/components/Button';
 import Text from 'src/components/Text';
-import FadeInOut from 'src/components/FadeInOut';
+import Box from 'src/components/Box';
+
+// Assets
+import GithubLogo from 'src/features/auth/assets/github.png';
+
+import './styles.css';
 
 const GithubButton = () => {
 	const openGithubRepo = () => {
@@ -11,22 +16,24 @@ const GithubButton = () => {
 	};
 
 	return (
-		<FadeInOut
-			action='fade-in'
-			duration={0.5}
+		<Button
+			className='button-auth'
+			onClick={() => {
+				openGithubRepo();
+			}}
 		>
-			<Button
-				style={{ margin: '25px' }}
-				onClick={() => {
-					openGithubRepo();
-				}}
-			>
+			<Box flexDirection='row'>
+				<img
+					src={GithubLogo}
+					alt='GitHub Logo'
+					width='32px'
+				/>
 				<Text
 					tag={'a'}
 					text={'GitHub'}
 				/>
-			</Button>
-		</FadeInOut>
+			</Box>
+		</Button>
 	);
 };
 

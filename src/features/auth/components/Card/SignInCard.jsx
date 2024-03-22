@@ -3,22 +3,35 @@
 import Card from 'src/components/Card';
 import Text from 'src/components/Text';
 import Input from 'src/components/Input';
+import Box from 'src/components/Box';
+
+import GithubButton from 'src/features/auth/components/Button/GithubButton';
+import GoogleButton from '../Button/GoogleButton';
+import FacebookButton from '../Button/FacebookButton';
+import MicrosoftButton from '../Button/MicrosoftButton';
 
 const CardHeader = () => {
 	return (
-		<div style={{ padding: '20px', borderBottom: '1px solid #dadde1' }}>
+		<Box
+			alignItems='start'
+			style={{
+				padding: '20px',
+				overflow: 'auto',
+				borderBottom: '1px solid #dadde1',
+			}}
+		>
 			<Text
 				tag={'h1'}
 				text={'Sign In'}
 			/>
-		</div>
+		</Box>
 	);
 };
 
 const CardContent = () => {
 	return (
-		<div style={{ padding: '20px', overflow: 'auto' }}>
-			<div style={{ display: 'flex' }}>
+		<Box style={{ padding: '20px', overflow: 'auto' }}>
+			<Box flexDirection='row'>
 				<Input
 					style={{ marginRight: '5x', marginBottom: '10px' }}
 					placeholder='First name'
@@ -27,32 +40,54 @@ const CardContent = () => {
 					style={{ marginLeft: '5px', marginBottom: '10px' }}
 					placeholder='Last name'
 				/>
-			</div>
-			<Input
-				style={{ marginBottom: '10px' }}
-				placeholder='Mobile number or email'
-			/>
-			<Input
-				style={{ marginBottom: '10px' }}
-				placeholder='New password'
-			/>
-			<div style={{ display: 'flex' }}>
-				<hr />
-				<b>
-					<Text
-						tag={'p'}
-						text={'or register with'}
-					/>
-				</b>
-				<hr />
-			</div>
-		</div>
+			</Box>
+			<Box>
+				<Input
+					style={{ marginBottom: '10px' }}
+					placeholder='Mobile number or email'
+				/>
+			</Box>
+			<Box>
+				<Input
+					style={{ marginBottom: '10px' }}
+					placeholder='New password'
+				/>
+			</Box>
+			<Box
+				flexDirection='row'
+				height='50px'
+			>
+				<div style={{ marginTop: '5px' }}>
+					<hr />
+				</div>
+
+				<div>
+					<b>
+						<Text
+							tag={'p'}
+							text={'or register with'}
+						/>
+					</b>
+				</div>
+
+				<div style={{ marginTop: '5px' }}>
+					<hr />
+				</div>
+			</Box>
+
+			<Box>
+				<GoogleButton />
+				<GithubButton />
+				<FacebookButton />
+				<MicrosoftButton />
+			</Box>
+		</Box>
 	);
 };
 
 const CardFooter = () => {
 	return (
-		<div style={{ padding: '20px', borderTop: '1px solid #dadde1' }}>
+		<Box style={{ padding: '20px', borderTop: '1px solid #dadde1' }}>
 			<i>
 				<Text
 					tag={'p'}
@@ -61,16 +96,13 @@ const CardFooter = () => {
 					}
 				/>
 			</i>
-		</div>
+		</Box>
 	);
 };
 
 const SignInCard = () => {
 	return (
-		<Card
-			height='400px'
-			width='400px'
-		>
+		<Card width='400px'>
 			<CardHeader />
 			<CardContent />
 			<CardFooter />

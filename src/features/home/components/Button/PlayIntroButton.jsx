@@ -5,6 +5,7 @@ import { useDispatch, useSelector } from 'react-redux';
 // Components
 import Button from 'src/components/Button';
 import FadeInOut from 'src/components/FadeInOut';
+import Text from 'src/components/Text';
 
 //Redux
 import { playIntro } from 'src/features/home/reducers/homeSlice';
@@ -29,10 +30,14 @@ const PlayIntroButton = () => {
 			duration={0.5}
 		>
 			<Button
-				text='Play Intro'
 				style={{ margin: '25px' }}
 				onClick={() => playIntroButtonOnClick()}
-			/>
+			>
+				<Text
+					tag={'a'}
+					text={'Play Intro'}
+				/>
+			</Button>
 		</FadeInOut>
 	);
 };

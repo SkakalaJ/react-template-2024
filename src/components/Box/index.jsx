@@ -1,38 +1,44 @@
 /** @format */
 
 import PropTypes from 'prop-types';
-// styles
 import './index.css';
 
-const Footer = (props) => {
+const FlexBox = (props) => {
 	return (
-		<footer
+		<div
 			className={props.className}
 			style={{
 				...props.style,
 				height: props.height,
+				width: props.width,
+				flexDirection: props.flexDirection,
 				justifyContent: props.justifyContent,
+				alignItems: props.alignItems,
 			}}
 		>
 			{props.children}
-		</footer>
+		</div>
 	);
 };
 
-Footer.defaultProps = {
+FlexBox.defaultProps = {
 	style: {},
-	justifyContent: 'center',
-	className: 'footer-container-default',
+	className: 'flexbox-default',
+	height: 'fit-content',
+	width: '100%',
+	justifyContent: 'space',
+	flexDirection: 'column',
+	alignItems: 'center',
 };
 
-Footer.propTypes = {
-	// required
+FlexBox.propTypes = {
 	children: PropTypes.node.isRequired,
-	// optional
 	id: PropTypes.string,
-	className: PropTypes.string,
 	style: PropTypes.object,
+	className: PropTypes.string,
+	width: PropTypes.string,
 	height: PropTypes.string,
+	flexDirection: PropTypes.oneOf(['column', 'row']),
 	justifyContent: PropTypes.oneOf([
 		'center',
 		'end',
@@ -52,6 +58,18 @@ Footer.propTypes = {
 		'revert-layer',
 		'unset',
 	]),
+	alignItems: PropTypes.oneOf([
+		'normal',
+		'stretch',
+		'center',
+		'flexStart',
+		'flexEnd',
+		'start',
+		'end',
+		'baseline',
+		'initial',
+		'inherit',
+	]),
 };
 
-export default Footer;
+export default FlexBox;

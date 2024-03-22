@@ -4,6 +4,7 @@ import { useNavigate } from 'react-router-dom';
 // Components
 import Button from 'src/components/Button';
 import FadeInOut from 'src/components/FadeInOut';
+import Text from 'src/components/Text';
 
 const SignInButton = () => {
 	const navigate = useNavigate();
@@ -18,10 +19,14 @@ const SignInButton = () => {
 			duration={0.5}
 		>
 			<Button
-				text='Sign In'
 				style={{ margin: '25px' }}
 				onClick={() => signInButtonClick()}
-			/>
+			>
+				<Text
+					tag={'a'}
+					text={'Sign In'}
+				/>
+			</Button>
 		</FadeInOut>
 	);
 };

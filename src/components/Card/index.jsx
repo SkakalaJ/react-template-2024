@@ -6,7 +6,7 @@ import './index.css';
 const Card = (props) => {
 	return (
 		<div
-			className={`${props.className}`}
+			className={props.className}
 			style={{
 				...props.style,
 				height: props.height,

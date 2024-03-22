@@ -5,6 +5,7 @@ import { useDispatch } from 'react-redux';
 // Components
 import Button from 'src/components/Button';
 import FadeInOut from 'src/components/FadeInOut';
+import Text from 'src/components/Text';
 
 //Redux
 import { skipIntro } from 'src/features/home/reducers/homeSlice';
@@ -24,10 +25,14 @@ const SkipIntroButton = () => {
 				duration={2}
 			>
 				<Button
-					text='Intro skip'
 					style={{ margin: '25px' }}
 					onClick={() => dispatch(skipIntro())}
-				/>
+				>
+					<Text
+						tag={'a'}
+						text={'Intro skip'}
+					/>
+				</Button>
 			</FadeInOut>
 		</FadeInOut>
 	);
