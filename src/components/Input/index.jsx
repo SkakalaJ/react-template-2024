@@ -6,7 +6,7 @@ import './index.css';
 const Input = (props) => {
 	return (
 		<input
-			type='text'
+			type={props.type}
 			className={props.className}
 			placeholder={props.placeholder}
 			style={props.style}

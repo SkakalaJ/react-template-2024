@@ -1,5 +1,7 @@
 /** @format */
 
+import { useState } from 'react';
+
 import Card from 'src/components/Card';
 import Text from 'src/components/Text';
 import Input from 'src/components/Input';
@@ -9,6 +11,10 @@ import GithubButton from 'src/features/auth/components/Button/GithubButton';
 import GoogleButton from '../Button/GoogleButton';
 import FacebookButton from '../Button/FacebookButton';
 import MicrosoftButton from '../Button/MicrosoftButton';
+import SignInButton from '../Button/SignInButton';
+import PasswordVisibilityButton from '../Button/PasswordVisibilityButton';
+
+import './styles.css';
 
 const CardHeader = () => {
 	return (
@@ -29,33 +35,49 @@ const CardHeader = () => {
 };
 
 const CardContent = () => {
+	const [passwordVisibility, setPasswordVisibility] = useState(false);
+
 	return (
 		<Box style={{ padding: '20px', overflow: 'auto' }}>
-			<Box flexDirection='row'>
+			<Box
+				flexDirection='row'
+				style={{ marginBottom: '10px' }}
+			>
 				<Input
-					style={{ marginRight: '5x', marginBottom: '10px' }}
+					style={{ marginRight: '5x' }}
 					placeholder='First name'
 				/>
 				<Input
-					style={{ marginLeft: '5px', marginBottom: '10px' }}
+					style={{ marginLeft: '5px' }}
 					placeholder='Last name'
 				/>
 			</Box>
-			<Box>
-				<Input
-					style={{ marginBottom: '10px' }}
-					placeholder='Mobile number or email'
-				/>
+			<Box style={{ marginBottom: '10px' }}>
+				<Input placeholder='Mobile number or email' />
 			</Box>
-			<Box>
+			<Box style={{ marginBottom: '10px' }}>
 				<Input
-					style={{ marginBottom: '10px' }}
+					type={passwordVisibility ? 'text' : 'password'}
 					placeholder='New password'
 				/>
+				<PasswordVisibilityButton onClick={(isPasswordVisible) => setPasswordVisibility(isPasswordVisible)}/>
 			</Box>
+
+			<Box style={{ marginBottom: '10px' }}>
+				<SignInButton />
+			</Box>
+
+			<Box style={{ marginBottom: '15px' }}>
+				<Text
+					tag='p'
+					text="Don't have an account yet? Register now"
+				/>
+			</Box>
+
 			<Box
 				flexDirection='row'
 				height='50px'
+				style={{ marginBottom: '15px' }}
 			>
 				<div style={{ marginTop: '5px' }}>
 					<hr />
@@ -65,7 +87,7 @@ const CardContent = () => {
 					<b>
 						<Text
 							tag={'p'}
-							text={'or register with'}
+							text={'or sign in with'}
 						/>
 					</b>
 				</div>
@@ -76,10 +98,17 @@ const CardContent = () => {
 			</Box>
 
 			<Box>
-				<GoogleButton />
-				<GithubButton />
-				<FacebookButton />
-				<MicrosoftButton />
+				<Box
+					flexDirection='row'
+					style={{ marginBottom: '10px' }}
+				>
+					<GoogleButton />
+					<GithubButton />
+				</Box>
+				<Box flexDirection='row'>
+					<FacebookButton />
+					<MicrosoftButton />
+				</Box>
 			</Box>
 		</Box>
 	);

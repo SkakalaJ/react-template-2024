@@ -6,7 +6,7 @@ import Text from 'src/components/Text';
 import Box from 'src/components/Box';
 
 // Assets
-import FacebookLogo from 'src/features/auth/assets/facebook.png';
+import FacebookLogo from 'src/features/auth/assets/logos/facebook.png';
 
 import './styles.css';
 
@@ -18,15 +18,22 @@ const FacebookButton = () => {
 	return (
 		<Button
 			className='button-auth'
+			style={{ marginRight: '10px' }}
 			onClick={() => {
 				// openGithubRepo();
 			}}
 		>
 			<Box flexDirection='row'>
 				<img
+					display='block'
 					src={FacebookLogo}
 					alt='Facebook Logo'
-					width='32px'
+					style={{
+						maxWidth: '35px',
+						maxHeight: '35px',
+						objectFit: 'contain',
+						marginLeft: '10px',
+					}}
 				/>
 				<Text
 					tag={'a'}

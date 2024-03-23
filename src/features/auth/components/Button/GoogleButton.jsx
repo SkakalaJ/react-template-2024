@@ -6,7 +6,7 @@ import Text from 'src/components/Text';
 import Box from 'src/components/Box';
 
 // Assets
-import GoogleLogo from 'src/features/auth/assets/google.png';
+import GoogleLogo from 'src/features/auth/assets/logos/google.png';
 
 import './styles.css';
 
@@ -18,14 +18,22 @@ const GoogleButton = () => {
 	return (
 		<Button
 			className='button-auth'
+			style={{ marginRight: '10px' }}
 			onClick={() => {
 				// openGithubRepo();
 			}}
 		>
 			<Box flexDirection='row'>
 				<img
+					display='block'
 					src={GoogleLogo}
 					alt='Google Logo'
+					style={{
+						maxWidth: '35px',
+						maxHeight: '35px',
+						objectFit: 'contain',
+						marginLeft: '10px',
+					}}
 				/>
 				<Text
 					tag={'a'}

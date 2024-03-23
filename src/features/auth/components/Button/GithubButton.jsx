@@ -6,7 +6,7 @@ import Text from 'src/components/Text';
 import Box from 'src/components/Box';
 
 // Assets
-import GithubLogo from 'src/features/auth/assets/github.png';
+import GithubLogo from 'src/features/auth/assets/logos/github.png';
 
 import './styles.css';
 
@@ -18,15 +18,22 @@ const GithubButton = () => {
 	return (
 		<Button
 			className='button-auth'
+			style={{ marginLeft: '10px' }}
 			onClick={() => {
 				openGithubRepo();
 			}}
 		>
 			<Box flexDirection='row'>
 				<img
+					display='block'
 					src={GithubLogo}
 					alt='GitHub Logo'
-					width='32px'
+					style={{
+						maxWidth: '35px',
+						maxHeight: '35px',
+						objectFit: 'contain',
+						marginLeft: '10px',
+					}}
 				/>
 				<Text
 					tag={'a'}
