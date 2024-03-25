@@ -1,6 +1,7 @@
 /** @format */
 
 import { useState } from 'react';
+import { Link } from 'react-router-dom';
 
 import Card from 'src/components/Card';
 import Text from 'src/components/Text';
@@ -13,8 +14,8 @@ import FacebookButton from '../Button/FacebookButton';
 import MicrosoftButton from '../Button/MicrosoftButton';
 import SignInButton from '../Button/SignInButton';
 import PasswordVisibilityButton from '../Button/PasswordVisibilityButton';
-
-import './styles.css';
+import Button from 'src/components/Button';
+import JustTemplateText from 'src/features/auth/components/Text/JustTemplateText';
 
 const CardHeader = () => {
 	return (
@@ -39,28 +40,34 @@ const CardContent = () => {
 
 	return (
 		<Box style={{ padding: '20px', overflow: 'auto' }}>
-			<Box
-				flexDirection='row'
-				style={{ marginBottom: '10px' }}
-			>
-				<Input
-					style={{ marginRight: '5x' }}
-					placeholder='First name'
-				/>
-				<Input
-					style={{ marginLeft: '5px' }}
-					placeholder='Last name'
-				/>
-			</Box>
 			<Box style={{ marginBottom: '10px' }}>
 				<Input placeholder='Mobile number or email' />
 			</Box>
-			<Box style={{ marginBottom: '10px' }}>
+			<Box style={{ marginBottom: '5px' }}>
 				<Input
 					type={passwordVisibility ? 'text' : 'password'}
 					placeholder='New password'
 				/>
-				<PasswordVisibilityButton onClick={(isPasswordVisible) => setPasswordVisibility(isPasswordVisible)}/>
+				<PasswordVisibilityButton
+					onClick={(isPasswordVisible) =>
+						setPasswordVisibility(isPasswordVisible)
+					}
+				/>
+			</Box>
+
+			<Box
+				alignItems='flex-end'
+				style={{ marginBottom: '10px' }}
+			>
+				<Button
+					className=''
+					onClick={() => {}}
+				>
+					<Text
+						tag='a'
+						text='Forgot password?'
+					/>
+				</Button>
 			</Box>
 
 			<Box style={{ marginBottom: '10px' }}>
@@ -70,8 +77,9 @@ const CardContent = () => {
 			<Box style={{ marginBottom: '15px' }}>
 				<Text
 					tag='p'
-					text="Don't have an account yet? Register now"
+					text="Don't have an account yet?"
 				/>
+				<Link to='/auth/sign-up'>Register now</Link>
 			</Box>
 
 			<Box
@@ -84,12 +92,11 @@ const CardContent = () => {
 				</div>
 
 				<div>
-					<b>
-						<Text
-							tag={'p'}
-							text={'or sign in with'}
-						/>
-					</b>
+					<Text
+						tag={'p'}
+						formatTag='b'
+						text={'or sign in with'}
+					/>
 				</div>
 
 				<div style={{ marginTop: '5px' }}>
@@ -117,14 +124,7 @@ const CardContent = () => {
 const CardFooter = () => {
 	return (
 		<Box style={{ padding: '20px', borderTop: '1px solid #dadde1' }}>
-			<i>
-				<Text
-					tag={'p'}
-					text={
-						'* This is just a template. No valid data required during registration.'
-					}
-				/>
-			</i>
+			<JustTemplateText />
 		</Box>
 	);
 };

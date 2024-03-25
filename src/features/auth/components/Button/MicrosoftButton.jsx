@@ -38,6 +38,7 @@ const MicrosoftButton = () => {
 				<Text
 					tag={'a'}
 					text={'Microsoft'}
+					style={{ color: 'black' }}
 				/>
 			</Box>
 		</Button>

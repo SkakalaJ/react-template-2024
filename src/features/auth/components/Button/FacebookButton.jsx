@@ -38,6 +38,7 @@ const FacebookButton = () => {
 				<Text
 					tag={'a'}
 					text={'Facebook'}
+					style={{ color: 'black' }}
 				/>
 			</Box>
 		</Button>

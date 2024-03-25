@@ -18,7 +18,7 @@ const PasswordVisibilityButton = (props) => {
 	return (
 		<Button
 			className=''
-			style={{    
+			style={{
 				display: 'flex',
 				alignItems: 'center',
 				flexDirection: 'row',
@@ -27,7 +27,7 @@ const PasswordVisibilityButton = (props) => {
 				height: '37px',
 				width: '37px',
 				right: '0px',
-				cursor: 'pointer'
+				cursor: 'pointer',
 			}}
 			onClick={() => {
 				props.onClick(!isPasswordVisible);

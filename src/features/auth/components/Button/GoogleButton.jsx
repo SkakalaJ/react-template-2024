@@ -38,6 +38,7 @@ const GoogleButton = () => {
 				<Text
 					tag={'a'}
 					text={'Google'}
+					style={{ color: 'black' }}
 				/>
 			</Box>
 		</Button>

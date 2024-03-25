@@ -1,6 +1,7 @@
 /** @format */
 
 import { useState } from 'react';
+import { Link } from 'react-router-dom';
 
 import Card from 'src/components/Card';
 import Text from 'src/components/Text';
@@ -13,8 +14,8 @@ import FacebookButton from '../Button/FacebookButton';
 import MicrosoftButton from '../Button/MicrosoftButton';
 import RegisterButton from '../Button/RegisterButton';
 import PasswordVisibilityButton from '../Button/PasswordVisibilityButton';
-
-import './styles.css';
+import JustTemplateText from 'src/features/auth/components/Text/JustTemplateText';
+import OrRegisterWithText from 'src/features/auth/components/Text/OrRegisterWithText';
 
 const CardHeader = () => {
 	return (
@@ -60,7 +61,11 @@ const CardContent = () => {
 					type={passwordVisibility ? 'text' : 'password'}
 					placeholder='New password'
 				/>
-				<PasswordVisibilityButton onClick={(isPasswordVisible) => setPasswordVisibility(isPasswordVisible)}/>
+				<PasswordVisibilityButton
+					onClick={(isPasswordVisible) =>
+						setPasswordVisibility(isPasswordVisible)
+					}
+				/>
 			</Box>
 
 			<Box style={{ marginBottom: '10px' }}>
@@ -70,8 +75,9 @@ const CardContent = () => {
 			<Box style={{ marginBottom: '15px' }}>
 				<Text
 					tag='p'
-					text="Already have an account? Sign in"
+					text='Already have an account?'
 				/>
+				<Link to='/auth/sign-in'>Sign in</Link>
 			</Box>
 
 			<Box
@@ -84,12 +90,7 @@ const CardContent = () => {
 				</div>
 
 				<div>
-					<b>
-						<Text
-							tag={'p'}
-							text={'or register with'}
-						/>
-					</b>
+					<OrRegisterWithText />
 				</div>
 
 				<div style={{ marginTop: '5px' }}>
@@ -117,14 +118,7 @@ const CardContent = () => {
 const CardFooter = () => {
 	return (
 		<Box style={{ padding: '20px', borderTop: '1px solid #dadde1' }}>
-			<i>
-				<Text
-					tag={'p'}
-					text={
-						'* This is just a template. No valid data required during registration.'
-					}
-				/>
-			</i>
+			<JustTemplateText />
 		</Box>
 	);
 };

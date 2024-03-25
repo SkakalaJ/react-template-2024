@@ -4,7 +4,6 @@ import PropTypes from 'prop-types';
 
 import './index.css';
 
-
 // Default css class nemoze byt lebo potom je tazke aplikovat button bez aplikacie CSS
 const Button = (props) => {
 	return (
