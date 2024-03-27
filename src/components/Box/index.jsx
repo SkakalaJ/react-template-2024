@@ -3,7 +3,7 @@
 import PropTypes from 'prop-types';
 import './index.css';
 
-const FlexBox = (props) => {
+const Box = (props) => {
 	return (
 		<div
 			className={props.className}
@@ -21,17 +21,17 @@ const FlexBox = (props) => {
 	);
 };
 
-FlexBox.defaultProps = {
+Box.defaultProps = {
 	style: {},
 	className: 'flexbox-default',
 	height: 'fit-content',
 	width: '100%',
-	justifyContent: 'space',
+	justifyContent: 'center',
 	flexDirection: 'column',
 	alignItems: 'center',
 };
 
-FlexBox.propTypes = {
+Box.propTypes = {
 	children: PropTypes.node.isRequired,
 	id: PropTypes.string,
 	style: PropTypes.object,
@@ -62,8 +62,8 @@ FlexBox.propTypes = {
 		'normal',
 		'stretch',
 		'center',
-		'flexStart',
-		'flexEnd',
+		'flex-start',
+		'flex-end',
 		'start',
 		'end',
 		'baseline',
@@ -72,4 +72,4 @@ FlexBox.propTypes = {
 	]),
 };
 
-export default FlexBox;
+export default Box;

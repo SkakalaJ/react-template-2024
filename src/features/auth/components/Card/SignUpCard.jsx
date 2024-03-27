@@ -1,11 +1,6 @@
 /** @format */
 
-import { useState } from 'react';
-import { Link } from 'react-router-dom';
-
 import Card from 'src/components/Card';
-import Text from 'src/components/Text';
-import Input from 'src/components/Input';
 import Box from 'src/components/Box';
 
 import GithubButton from 'src/features/auth/components/Button/GithubButton';
@@ -13,9 +8,15 @@ import GoogleButton from '../Button/GoogleButton';
 import FacebookButton from '../Button/FacebookButton';
 import MicrosoftButton from '../Button/MicrosoftButton';
 import RegisterButton from '../Button/RegisterButton';
-import PasswordVisibilityButton from '../Button/PasswordVisibilityButton';
+import SignInLink from '../Link/SignInLink';
 import JustTemplateText from 'src/features/auth/components/Text/JustTemplateText';
 import OrRegisterWithText from 'src/features/auth/components/Text/OrRegisterWithText';
+import SignUpHeaderText from 'src/features/auth/components/Text/SignUpHeaderText';
+import MobileOrEmailInput from '../Input/MobileOrEmailInput';
+import FirstNameInput from '../Input/FirstNameInput';
+import LastNameInput from '../Input/LastNameInput';
+import AlreadyHaveAccountText from '../Text/AlreadyHaveAccountText';
+import NewPasswordInput from '../Input/NewPasswordInput';
 
 const CardHeader = () => {
 	return (
@@ -27,45 +28,26 @@ const CardHeader = () => {
 				borderBottom: '1px solid #dadde1',
 			}}
 		>
-			<Text
-				tag={'h1'}
-				text={'Sign Up'}
-			/>
+			<SignUpHeaderText />
 		</Box>
 	);
 };
 
 const CardContent = () => {
-	const [passwordVisibility, setPasswordVisibility] = useState(false);
-
 	return (
 		<Box style={{ padding: '20px', overflow: 'auto' }}>
 			<Box
 				flexDirection='row'
 				style={{ marginBottom: '10px' }}
 			>
-				<Input
-					style={{ marginRight: '5x' }}
-					placeholder='First name'
-				/>
-				<Input
-					style={{ marginLeft: '5px' }}
-					placeholder='Last name'
-				/>
+				<FirstNameInput />
+				<LastNameInput />
 			</Box>
 			<Box style={{ marginBottom: '10px' }}>
-				<Input placeholder='Mobile number or email' />
+				<MobileOrEmailInput />
 			</Box>
 			<Box style={{ marginBottom: '10px' }}>
-				<Input
-					type={passwordVisibility ? 'text' : 'password'}
-					placeholder='New password'
-				/>
-				<PasswordVisibilityButton
-					onClick={(isPasswordVisible) =>
-						setPasswordVisibility(isPasswordVisible)
-					}
-				/>
+				<NewPasswordInput />
 			</Box>
 
 			<Box style={{ marginBottom: '10px' }}>
@@ -73,11 +55,8 @@ const CardContent = () => {
 			</Box>
 
 			<Box style={{ marginBottom: '15px' }}>
-				<Text
-					tag='p'
-					text='Already have an account?'
-				/>
-				<Link to='/auth/sign-in'>Sign in</Link>
+				<AlreadyHaveAccountText />
+				<SignInLink />
 			</Box>
 
 			<Box

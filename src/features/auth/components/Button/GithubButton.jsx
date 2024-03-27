@@ -4,6 +4,7 @@
 import Button from 'src/components/Button';
 import Text from 'src/components/Text';
 import Box from 'src/components/Box';
+import Image from 'src/components/Image';
 
 // Assets
 import GithubLogo from 'src/features/auth/assets/logos/github.png';
@@ -24,14 +25,12 @@ const GithubButton = () => {
 			}}
 		>
 			<Box flexDirection='row'>
-				<img
-					display='block'
+				<Image
 					src={GithubLogo}
 					alt='GitHub Logo'
 					style={{
 						maxWidth: '35px',
 						maxHeight: '35px',
-						objectFit: 'contain',
 						marginLeft: '10px',
 					}}
 				/>
