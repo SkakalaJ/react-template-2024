@@ -12,17 +12,17 @@ import GithubLogo from 'src/features/auth/assets/logos/github.png';
 import './styles.css';
 
 const GithubButton = () => {
-	const openGithubRepo = () => {
-		window.open('https://github.com/SkakalaJ/react-template-2024', '_blank');
-	};
+	// const openGithubRepo = () => {
+	// 	window.open('https://github.com/SkakalaJ/react-template-2024', '_blank');
+	// };
 
 	return (
 		<Button
+			elementType='a'
+			href='https://github.com/SkakalaJ/react-template-2024'
+			target='_blank'
 			className='button-auth'
 			style={{ marginLeft: '10px' }}
-			onClick={() => {
-				openGithubRepo();
-			}}
 		>
 			<Box flexDirection='row'>
 				<Image
@@ -35,7 +35,8 @@ const GithubButton = () => {
 					}}
 				/>
 				<Text
-					tag={'a'}
+					style={{ color: 'salmon' }}
+					tag={'p'}
 					text={'GitHub'}
 				/>
 			</Box>

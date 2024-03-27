@@ -8,16 +8,10 @@ import Box from 'src/components/Box';
 import './styles.css';
 
 const SignInButton = () => {
-	// const openGithubRepo = () => {
-	// 	window.open('https://github.com/SkakalaJ/react-template-2024', '_blank');
-	// };
-
 	return (
 		<Button
 			className='button-form'
-			onClick={() => {
-				// openGithubRepo();
-			}}
+			buttonType='submit'
 		>
 			<Box>
 				<Text

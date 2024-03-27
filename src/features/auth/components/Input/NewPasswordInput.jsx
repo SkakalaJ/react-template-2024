@@ -6,12 +6,21 @@ import PasswordVisibilityButton from 'src/features/auth/components/Button/Passwo
 const NewPasswordInput = () => {
 	const [passwordVisibility, setPasswordVisibility] = useState(false);
 
+	const validation = (value) => {
+		return value;
+	};
+
 	return (
 		<Fragment>
 			<Input
+				isRequired
 				style={{ paddingRight: '40px' }}
 				type={passwordVisibility ? 'text' : 'password'}
 				placeholder='New password'
+				name='newPassword'
+				onInvalid={(e) => {
+					e.target.setCustomValidity(validation(e.target.value));
+				}}
 			/>
 			<PasswordVisibilityButton
 				onClick={(isPasswordVisible) =>

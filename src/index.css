@@ -9,9 +9,11 @@ body {
 	-moz-osx-font-smoothing: grayscale;
 }
 
-input, select, button{
-    font-family: inherit;
-    font-size: inherit;
+input,
+select,
+button {
+	font-family: inherit;
+	font-size: inherit;
 }
 
 code {

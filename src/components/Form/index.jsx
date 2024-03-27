@@ -6,7 +6,7 @@ import PropTypes from 'prop-types';
 const Form = (props) => {
 	const handleSubmit = (e) => {
 		e.preventDefault();
-		props.onFormSubmit(e.target.value);
+		props.onFormSubmit(e);
 	};
 
 	return (

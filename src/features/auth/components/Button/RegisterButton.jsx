@@ -15,9 +15,7 @@ const RegisterButton = () => {
 	return (
 		<Button
 			className='button-form'
-			onClick={() => {
-				// openGithubRepo();
-			}}
+			buttonType='submit'
 		>
 			<Box>
 				<Text

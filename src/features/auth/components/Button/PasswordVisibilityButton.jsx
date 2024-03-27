@@ -5,6 +5,7 @@ import PropTypes from 'prop-types';
 
 // Components
 import Button from 'src/components/Button';
+import Image from 'src/components/Image';
 
 // Assets
 import EyeVissibleIcon from 'src/features/auth/assets/icons/eye-vissible.svg';
@@ -17,6 +18,7 @@ const PasswordVisibilityButton = (props) => {
 
 	return (
 		<Button
+			elementType='div'
 			className=''
 			style={{
 				display: 'flex',
@@ -28,20 +30,20 @@ const PasswordVisibilityButton = (props) => {
 				width: '37px',
 				right: '0px',
 				cursor: 'pointer',
+				border: 'none',
+				background: 'transparent',
 			}}
 			onClick={() => {
 				props.onClick(!isPasswordVisible);
 				setIsPasswordVisible(!isPasswordVisible);
 			}}
 		>
-			<img
-				display='block'
+			<Image
 				src={isPasswordVisible ? EyeVissibleIcon : EyeHiddenIcon}
 				alt='Eye Icon'
 				style={{
 					maxWidth: '20px',
 					maxHeight: '20px',
-					objectFit: 'contain',
 					opacity: `${isPasswordVisible ? '1' : '.4'}`,
 				}}
 			/>

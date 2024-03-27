@@ -10,7 +10,7 @@ import SignInButton from 'src/features/auth/components/Button/SignInButton';
 const SignInForm = () => {
 	return (
 		<Form
-			onFormSubmit={(e) => {
+			onFormSubmit={() => {
 				console.log('Form Submitted');
 			}}
 		>
