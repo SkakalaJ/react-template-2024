@@ -10,7 +10,7 @@ const SignInButton = () => {
 	const navigate = useNavigate();
 
 	const signInButtonClick = () => {
-		navigate('/auth/sign-in');
+		navigate('/auth');
 	};
 
 	return (

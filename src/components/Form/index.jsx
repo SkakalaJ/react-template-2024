@@ -28,7 +28,6 @@ const Form = (props) => {
 Form.defaultProps = {
 	style: {},
 	fullWidth: true,
-	onInputChange: () => {},
 };
 
 Form.propTypes = {
@@ -36,7 +35,6 @@ Form.propTypes = {
 	style: PropTypes.object,
 	className: PropTypes.string,
 	fullWidth: PropTypes.bool,
-	onInputChange: PropTypes.func,
 	onFormSubmit: PropTypes.func.isRequired,
 	children: PropTypes.node.isRequired,
 };

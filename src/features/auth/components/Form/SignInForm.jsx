@@ -4,14 +4,23 @@ import Box from 'src/components/Box';
 import Form from 'src/components/Form';
 import MobileOrEmailInput from 'src/features/auth/components/Input/MobileOrEmailInput';
 import PasswordInput from 'src/features/auth/components/Input/PasswordInput';
-import ForgotPasswordButton from 'src/features/auth/components/Button/ForgotPasswordButton';
+import ForgotPasswordLink from 'src/features/auth/components/Link/ForgotPasswordLink';
 import SignInButton from 'src/features/auth/components/Button/SignInButton';
 
 const SignInForm = () => {
+	const onMobileOrEmail = (value) => {
+		console.log('Mobile or Email:', value);
+	};
+
+	const onPassword = (value) => {
+		console.log('Password:', value);
+	};
+
 	return (
 		<Form
-			onFormSubmit={() => {
-				console.log('Form Submitted');
+			onFormSubmit={(e) => {
+				onMobileOrEmail(e.target.mobileOrEmail.value);
+				onPassword(e.target.password.value);
 			}}
 		>
 			<Box style={{ marginBottom: '10px' }}>
@@ -25,7 +34,7 @@ const SignInForm = () => {
 				alignItems='flex-end'
 				style={{ marginBottom: '10px' }}
 			>
-				<ForgotPasswordButton />
+				<ForgotPasswordLink />
 			</Box>
 
 			<Box>

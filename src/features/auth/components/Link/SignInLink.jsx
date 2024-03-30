@@ -6,7 +6,7 @@ import SignInText from '../Text/SignInText';
 
 const SignUpLink = () => {
 	return (
-		<Link to='/auth/sign-in'>
+		<Link to='/auth'>
 			<SignInText />
 		</Link>
 	);

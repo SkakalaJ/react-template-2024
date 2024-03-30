@@ -12,10 +12,16 @@ const Input = forwardRef((props, ref) => {
 			className={props.className}
 			placeholder={props.placeholder}
 			style={props.style}
-			onChange={props.onInputChange}
+			onChange={props.onChange}
 			required={props.isRequired}
+			readOnly={props.isReadOnly}
 			onInvalid={props.onInvalid}
+			onInput={props.onInput}
 			name={props.name}
+			autoComplete={props.autoComplete}
+			minLength={`${props.minLength}`}
+			maxLength={`${props.maxLength}`}
+			value={props.value}
 		/>
 	);
 });
@@ -25,6 +31,10 @@ Input.defaultProps = {
 	className: 'input-default',
 	type: 'text',
 	isRequired: false,
+	isReadOnly: false,
+	autoComplete: 'on',
+	minLength: 0,
+	maxLength: 256,
 };
 
 Input.propTypes = {
@@ -56,10 +66,16 @@ Input.propTypes = {
 		'week',
 	]),
 	placeholder: PropTypes.string.isRequired,
-	onInputChange: PropTypes.func,
+	onChange: PropTypes.func,
 	onInvalid: PropTypes.func,
+	onInput: PropTypes.func,
 	isRequired: PropTypes.bool,
+	isReadOnly: PropTypes.bool,
+	autoComplete: PropTypes.string,
 	name: PropTypes.string.isRequired,
+	minLength: PropTypes.number,
+	maxLength: PropTypes.number,
+	value: PropTypes.string,
 };
 
 Input.displayName = 'Input';

@@ -16,10 +16,10 @@ const AuthRoutes = ({ RootPage }) => {
 			>
 				<Route
 					index
-					element={<SignUpContentElements />}
+					element={<SignInContentElements />}
 				/>
 				<Route
-					path='sign-in'
+					path='password/reset'
 					element={<SignInContentElements />}
 				/>
 				<Route
@@ -28,7 +28,7 @@ const AuthRoutes = ({ RootPage }) => {
 				/>
 				<Route
 					path='*'
-					element={<SignUpContentElements />}
+					element={<SignInContentElements />}
 				/>
 			</Route>
 		</Routes>

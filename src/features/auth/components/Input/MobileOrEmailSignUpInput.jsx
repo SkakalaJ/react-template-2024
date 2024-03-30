@@ -1,18 +1,16 @@
 /** @format */
 
 import { useRef } from 'react';
-import PropTypes from 'prop-types';
 import validator from 'validator';
 
 import Input from 'src/components/Input';
 
-const MobileOrEmailInput = (props) => {
+const MobileOrEmailSignUpInput = () => {
 	const inputRef = useRef(null);
 
 	const specialValidation = (value) => {
 		const isEmail = validator.isEmail(value);
 		const isMobile = validator.isMobilePhone(value, 'any');
-
 		if (!isEmail && !isMobile) {
 			return 'Invalid email or mobile number';
 		}
@@ -23,6 +21,34 @@ const MobileOrEmailInput = (props) => {
 	const basicValidation = (validityState) => {
 		if (validityState.valueMissing) {
 			return 'Mobile number or email is required';
+		}
+
+		if (validityState.typeMismatch) {
+			return 'Invalid email or mobile number';
+		}
+
+		if (validityState.tooShort) {
+			return 'Mobile number or email is too short';
+		}
+
+		if (validityState.tooLong) {
+			return 'Mobile number or email is too long';
+		}
+
+		if (validityState.patternMismatch) {
+			return 'Invalid email or mobile number';
+		}
+
+		if (validityState.rangeUnderflow) {
+			return 'Mobile number or email is too short';
+		}
+
+		if (validityState.rangeOverflow) {
+			return 'Mobile number or email is too long';
+		}
+
+		if (validityState.stepMismatch) {
+			return 'Invalid email or mobile number';
 		}
 
 		return '';
@@ -48,13 +74,12 @@ const MobileOrEmailInput = (props) => {
 	return (
 		<Input
 			ref={inputRef}
-			value={props.value}
 			isRequired
-			isReadOnly={props.isReadOnly}
 			autoComplete='off'
 			placeholder='Mobile number or email'
 			name='mobileOrEmail'
-			minLength={1}
+			minLength={6}
+			maxLength={128}
 			onInput={(e) => {
 				e.target.setCustomValidity(validation(e.target.value));
 				e.target.reportValidity();
@@ -66,9 +91,4 @@ const MobileOrEmailInput = (props) => {
 	);
 };
 
-MobileOrEmailInput.propTypes = {
-	isReadOnly: PropTypes.bool,
-	value: PropTypes.string,
-};
-
-export default MobileOrEmailInput;
+export default MobileOrEmailSignUpInput;

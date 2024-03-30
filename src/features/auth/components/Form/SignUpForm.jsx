@@ -2,7 +2,7 @@
 
 import Box from 'src/components/Box';
 import Form from 'src/components/Form';
-import MobileOrEmailInput from 'src/features/auth/components/Input/MobileOrEmailInput';
+import MobileOrEmailSignUpInput from 'src/features/auth/components/Input/MobileOrEmailSignUpInput';
 import NewPasswordInput from 'src/features/auth/components/Input/NewPasswordInput';
 import FirstNameInput from 'src/features/auth/components/Input/FirstNameInput';
 import LastNameInput from 'src/features/auth/components/Input/LastNameInput';
@@ -10,19 +10,19 @@ import RegisterButton from 'src/features/auth/components/Button/RegisterButton';
 
 const SignUpForm = () => {
 	const onFirstName = (value) => {
-		console.log('First Name:', value);
+		// console.log('First Name:', value);
 	};
 
 	const onLastName = (value) => {
-		console.log('Last Name:', value);
+		// console.log('Last Name:', value);
 	};
 
 	const onMobileOrEmail = (value) => {
-		console.log('Mobile or Email:', value);
+		// console.log('Mobile or Email:', value);
 	};
 
 	const onNewPassword = (value) => {
-		console.log('New Password:', value);
+		// console.log('New Password:', value);
 	};
 
 	return (
@@ -42,7 +42,7 @@ const SignUpForm = () => {
 				<LastNameInput />
 			</Box>
 			<Box style={{ marginBottom: '10px' }}>
-				<MobileOrEmailInput />
+				<MobileOrEmailSignUpInput />
 			</Box>
 			<Box style={{ marginBottom: '10px' }}>
 				<NewPasswordInput />

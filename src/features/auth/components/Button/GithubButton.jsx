@@ -12,10 +12,6 @@ import GithubLogo from 'src/features/auth/assets/logos/github.png';
 import './styles.css';
 
 const GithubButton = () => {
-	// const openGithubRepo = () => {
-	// 	window.open('https://github.com/SkakalaJ/react-template-2024', '_blank');
-	// };
-
 	return (
 		<Button
 			elementType='a'

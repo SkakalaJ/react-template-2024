@@ -47,15 +47,15 @@ const CardContent = () => {
 				style={{ marginBottom: '15px' }}
 			>
 				<div style={{ marginTop: '5px' }}>
-					<hr />
+					<hr style={{ float: 'left' }} />
 				</div>
 
-				<div>
+				<div style={{ textAlign: 'center' }}>
 					<OrSignInWithText />
 				</div>
 
 				<div style={{ marginTop: '5px' }}>
-					<hr />
+					<hr style={{ float: 'right' }} />
 				</div>
 			</Box>
 
