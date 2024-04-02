@@ -13,7 +13,7 @@ const Modal = (props) => {
 			id={props.id}
 			className={props.className}
 			style={{
-				...props.style
+				...props.style,
 			}}
 		>
 			{props.children}

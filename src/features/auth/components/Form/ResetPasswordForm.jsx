@@ -10,7 +10,7 @@ import ResetPasswordInputDescriptionText from 'src/features/auth/components/Text
 
 const ResetPasswordForm = (props) => {
 	const onMobileOrEmail = (value) => {
-		props.onVerifiedMobileOrEmail(value);
+		props.onSuccess(value);
 	};
 
 	return (
@@ -38,7 +38,7 @@ const ResetPasswordForm = (props) => {
 };
 
 ResetPasswordForm.propTypes = {
-	onVerifiedMobileOrEmail: PropTypes.func,
+	onSuccess: PropTypes.func,
 };
 
 export default ResetPasswordForm;

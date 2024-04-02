@@ -10,7 +10,6 @@ import AccVerifiedSuccessfullyText from 'src/features/auth/components/Text/AccVe
 import NewPasswordInput from '../Input/NewPasswordInput';
 
 const NewPasswordForm = (props) => {
-
 	return (
 		<Form
 			onFormSubmit={(e) => {
@@ -18,7 +17,10 @@ const NewPasswordForm = (props) => {
 			}}
 		>
 			<Box style={{ marginBottom: '5px' }}>
-				<MobileOrEmailInput value={props.verifiedMobileOrEmail} isReadOnly/>
+				<MobileOrEmailInput
+					value={props.verifiedMobileOrEmail}
+					isReadOnly
+				/>
 			</Box>
 
 			<Box

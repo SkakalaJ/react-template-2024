@@ -8,8 +8,9 @@ import Box from 'src/components/Box';
 import AlreadyHaveAccountText from '../Text/AlreadyHaveAccountText';
 import SignInLink from '../Link/SignInLink';
 import ResetPasswordHeaderText from '../Text/ResetPasswordHeaderText';
-import ResetPasswordForm from '../Form/ResetPasswordForm';
-import NewPasswordForm from '../Form/NewPasswordForm';
+// import ResetPasswordForm from '../Form/ResetPasswordForm';
+// import NewPasswordForm from '../Form/NewPasswordForm';
+import ResetPasswordWizard from '../StepWizard/ResetPasswordWizard';
 
 const CardHeader = () => {
 	return (
@@ -27,25 +28,12 @@ const CardHeader = () => {
 };
 
 const CardContent = () => {
-	const [verifiedMobileOrEmail, setVerifiedMobileOrEmail] = useState('');
 	const [success, setSuccess] = useState(false);
 
-	const renderFormOrSuccess = () => {
-		if (success) {
-			return <Box>Success</Box>;
-		}
-
-		if (verifiedMobileOrEmail) {
-			return <NewPasswordForm verifiedMobileOrEmail={verifiedMobileOrEmail} onSuccess={() => setSuccess(true)}/>;
-		}
-
-		return <ResetPasswordForm onVerifiedMobileOrEmail={setVerifiedMobileOrEmail}/>;
-	};
-	
 	return (
 		<Box style={{ padding: '20px', overflow: 'auto', marginBottom: '10px' }}>
 			<Box style={{ marginBottom: '10px' }}>
-				{renderFormOrSuccess()}
+				<ResetPasswordWizard onSuccess={() => setSuccess(true)} />
 			</Box>
 
 			<Box>

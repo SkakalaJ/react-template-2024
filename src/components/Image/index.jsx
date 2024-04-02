@@ -11,6 +11,7 @@ const Image = (props) => {
 				...props.style,
 				objectFit: props.objectFit,
 			}}
+			onLoad={props.onLoad}
 		/>
 	);
 };
@@ -30,6 +31,7 @@ Image.propTypes = {
 	src: PropTypes.string.isRequired,
 	alt: PropTypes.string.isRequired,
 	objectFit: PropTypes.string,
+	onLoad: PropTypes.func,
 };
 
 export default Image;
