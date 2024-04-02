@@ -18,7 +18,12 @@ const ResetPasswordWizard = (props) => {
 	};
 
 	return (
-		<StepWizard initialStep={currentStep} onStepChange={(value) => {console.log(value);}}>
+		<StepWizard
+			initialStep={currentStep}
+			onStepChange={(value) => {
+				console.log(value);
+			}}
+		>
 			<ResetPasswordForm
 				onSuccess={(value) => {
 					setVerifiedMobileOrEmail(value);

@@ -5,7 +5,6 @@ import { Fragment, Children } from 'react';
 import PropTypes from 'prop-types';
 
 const StepWizard = (props) => {
-
 	const renderStep = () => {
 		const step = props.goToStep ? props.goToStep : props.initialStep;
 

@@ -1,25 +1,19 @@
 /** @format */
-// import { Routes, Route } from 'react-router-dom';
-import HomePage from './pages/home';
-import AuthPage from './pages/auth';
+// Path: src/App.jsx
+
+// Packages
+import { RouterProvider } from 'react-router';
+import { createBrowserRouter } from 'react-router-dom';
+// Routes
+import AppRoutes from './routes';
+// Styles
 import './App.css';
 
-import AuthRoutes from './features/auth/routes';
-import HomeRoutes from './features/home/routes';
-import { Fragment } from 'react';
-
-// import SignInContentElements from './features/auth/components/Content/SignInContentElements';
-// import SignUpContentElements from './features/auth/components/Content/SignUpContentElements';
+const router = createBrowserRouter(AppRoutes);
 
 function App() {
 	return (
-		<Fragment>
-			<AuthRoutes RootPage={<AuthPage />} />
-			<HomeRoutes RootPage={<HomePage />} />
-			{/* <Routes>
-				
-			</Routes> */}
-		</Fragment>
+		<RouterProvider router={router} />
 	);
 }
 

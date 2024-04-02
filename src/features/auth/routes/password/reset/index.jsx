@@ -1,13 +1,8 @@
 /** @format */
-// Path: src/features/auth/routes/index.jsx
+// Path: src/features/auth/routes/password/reset/index.jsx
 
 // Packages
 import { Navigate } from 'react-router-dom';
-// Pages
-import AuthPage from 'src/pages/auth';
-// Routes
-import SignUpRoute from './sign-up';
-import PasswordRoute from './password';
 // Features
 import SignInContentElements from 'src/features/auth/components/Content/SignInContentElements';
 
@@ -26,10 +21,9 @@ const FallBackRoute = {
 	),
 };
 
-const AuthRoute = {
-	path: 'auth',
-	element: <AuthPage />,
-	children: [IndexRoute, SignUpRoute, PasswordRoute, FallBackRoute],
+const PasswordResetRoute = {
+	path: 'reset',
+	children: [IndexRoute, FallBackRoute],
 };
 
-export default AuthRoute;
+export default PasswordResetRoute;

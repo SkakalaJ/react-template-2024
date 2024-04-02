@@ -1,19 +1,23 @@
 /** @format */
+// Path: src/index.js
 
+// React
 import ReactDOM from 'react-dom/client';
+// Styles
 import './index.css';
+// Components
 import App from './App';
+// Utilities
 import reportWebVitals from './reportWebVitals';
-import store from './app/store';
+// Redux
 import { Provider } from 'react-redux';
-import { BrowserRouter } from 'react-router-dom';
+import store from './app/store';
+
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
 	<Provider store={store}>
-		<BrowserRouter>
-			<App />
-		</BrowserRouter>
+		<App />
 	</Provider>,
 );
 

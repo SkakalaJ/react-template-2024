@@ -5,7 +5,7 @@ import Button from 'src/components/Button';
 import Text from 'src/components/Text';
 import FadeInOut from 'src/components/FadeInOut';
 
-const GithubButton = () => {
+const GithubHeaderButton = () => {
 
 	return (
 		<FadeInOut
@@ -27,4 +27,4 @@ const GithubButton = () => {
 	);
 };
 
-export default GithubButton;
+export default GithubHeaderButton;
