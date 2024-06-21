@@ -10,19 +10,19 @@ import RegisterButton from 'src/features/auth/components/Button/RegisterButton';
 
 const SignUpForm = () => {
 	const onFirstName = (value) => {
-		// console.log('First Name:', value);
+		console.log('First Name:', value);
 	};
 
 	const onLastName = (value) => {
-		// console.log('Last Name:', value);
+		console.log('Last Name:', value);
 	};
 
 	const onMobileOrEmail = (value) => {
-		// console.log('Mobile or Email:', value);
+		console.log('Mobile or Email:', value);
 	};
 
 	const onNewPassword = (value) => {
-		// console.log('New Password:', value);
+		console.log('New Password:', value);
 	};
 
 	return (

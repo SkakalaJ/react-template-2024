@@ -30,6 +30,7 @@ const Button = (props) => {
 					cursor: 'pointer',
 					...props.style,
 				}}
+				role='button'
 				onClick={props.onClick}
 			>
 				{props.children}
@@ -47,6 +48,7 @@ const Button = (props) => {
 				}}
 				onClick={props.onClick}
 				href={props.href}
+				role='button'
 				target={props.target ? props.target : '_self'}
 			>
 				{props.children}

@@ -3,7 +3,7 @@
 // Layouts
 import AuthLayout from 'src/layouts/auth/AuthLayout';
 
-const Auth = () => {
+const AuthPage = () => {
 	return (
 		<div style={{ height: 'inherit', display: 'flex' }}>
 			<AuthLayout />
@@ -11,4 +11,4 @@ const Auth = () => {
 	);
 };
 
-export default Auth;
+export default AuthPage;

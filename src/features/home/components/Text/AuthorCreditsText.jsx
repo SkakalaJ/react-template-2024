@@ -19,6 +19,7 @@ const AuthorCreditsText = () => {
 						text={
 							'React Template by Georgeo (Ing. Juraj Skákala) from Slovakia'
 						}
+						style={{ color: 'antiquewhite' }}
 					/>
 				</div>
 
@@ -28,6 +29,7 @@ const AuthorCreditsText = () => {
 						href='https://github.com/SkakalaJ/react-template-2024'
 						className='credits-text'
 						text={'github.com/SkakalaJ/react-template-2024'}
+						style={{ color: 'antiquewhite' }}
 					/>
 				</div>
 			</FadeInOut>

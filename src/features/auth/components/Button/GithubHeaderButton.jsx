@@ -6,7 +6,6 @@ import Text from 'src/components/Text';
 import FadeInOut from 'src/components/FadeInOut';
 
 const GithubHeaderButton = () => {
-
 	return (
 		<FadeInOut
 			action='fade-in'

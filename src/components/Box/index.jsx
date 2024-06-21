@@ -13,6 +13,7 @@ const Box = (props) => {
 				width: props.width,
 				flexDirection: props.flexDirection,
 				justifyContent: props.justifyContent,
+				flex: props.flex,
 				alignItems: props.alignItems,
 			}}
 		>
@@ -39,6 +40,7 @@ Box.propTypes = {
 	width: PropTypes.string,
 	height: PropTypes.string,
 	flexDirection: PropTypes.oneOf(['column', 'row']),
+	flex: PropTypes.oneOfType([PropTypes.string, PropTypes.number]),
 	justifyContent: PropTypes.oneOf([
 		'center',
 		'end',

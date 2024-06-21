@@ -2,10 +2,12 @@
 
 import { Fragment } from 'react';
 
+import AuthorCreditsText from 'src/features/auth/components/Text/AuthorCreditsText';
+
 const FooterElements = () => {
 	return (
 		<Fragment>
-			<div />
+			<AuthorCreditsText />
 		</Fragment>
 	);
 };

@@ -11,6 +11,8 @@ const Footer = (props) => {
 			style={{
 				...props.style,
 				height: props.height,
+				width: props.width,
+				position: props.position,
 				justifyContent: props.justifyContent,
 			}}
 		>
@@ -22,6 +24,7 @@ const Footer = (props) => {
 Footer.defaultProps = {
 	style: {},
 	justifyContent: 'center',
+	position: 'fixed',
 	className: 'footer-container-default',
 };
 
@@ -33,6 +36,8 @@ Footer.propTypes = {
 	className: PropTypes.string,
 	style: PropTypes.object,
 	height: PropTypes.string,
+	width: PropTypes.string,
+	position: PropTypes.oneOf(['fixed', 'absolute', 'relative']),
 	justifyContent: PropTypes.oneOf([
 		'center',
 		'end',

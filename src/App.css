@@ -49,7 +49,6 @@ div {
 }
 
 .credits-text {
-	color: antiquewhite;
 	opacity: 1;
 }
 
@@ -81,6 +80,14 @@ div {
 
 .button-circular {
 	border-radius: 50%;
+}
+
+.button-side-menu-hover:hover {
+	background-color: #fdb1a8;
+}
+
+.button-side-menu-hover:hover > * {
+	color: white;
 }
 
 /* .zoom-contents-transform {

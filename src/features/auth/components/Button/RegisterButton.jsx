@@ -8,10 +8,6 @@ import Box from 'src/components/Box';
 import './styles.css';
 
 const RegisterButton = () => {
-	// const openGithubRepo = () => {
-	// 	window.open('https://github.com/SkakalaJ/react-template-2024', '_blank');
-	// };
-
 	return (
 		<Button
 			className='button-form'

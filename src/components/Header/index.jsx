@@ -10,7 +10,9 @@ const Header = (props) => {
 			style={{
 				...props.style,
 				height: props.height,
+				width: props.width,
 				justifyContent: props.justifyContent,
+				position: props.position,
 			}}
 		>
 			{props.children}
@@ -22,6 +24,7 @@ Header.defaultProps = {
 	style: {},
 	justifyContent: 'center',
 	className: 'header-container-default',
+	position: 'fixed',
 };
 
 Header.propTypes = {
@@ -32,6 +35,8 @@ Header.propTypes = {
 	className: PropTypes.string,
 	style: PropTypes.object,
 	height: PropTypes.string,
+	width: PropTypes.string,
+	position: PropTypes.oneOf(['fixed', 'absolute', 'relative']),
 	justifyContent: PropTypes.oneOf([
 		'center',
 		'end',

@@ -7,6 +7,7 @@ import { Navigate } from 'react-router-dom';
 import HomePage from 'src/pages/home';
 // Routes
 import AuthRoute from 'src/features/auth/routes';
+import UserRoute from 'src/features/user/routes';
 
 const RootRoute = {
 	path: '/',
@@ -23,6 +24,6 @@ const FallBackRoute = {
 	),
 };
 
-const AppRoutes = [RootRoute, AuthRoute, FallBackRoute];
+const AppRoutes = [RootRoute, AuthRoute, UserRoute, FallBackRoute];
 
 export default AppRoutes;

@@ -12,17 +12,11 @@ import GoogleLogo from 'src/features/auth/assets/logos/google.png';
 import './styles.css';
 
 const GoogleButton = () => {
-	// const openGithubRepo = () => {
-	// 	window.open('https://github.com/SkakalaJ/react-template-2024', '_blank');
-	// };
-
 	return (
 		<Button
 			className='button-auth'
 			style={{ marginRight: '10px' }}
-			onClick={() => {
-				// openGithubRepo();
-			}}
+			onClick={() => {}}
 		>
 			<Box flexDirection='row'>
 				<Image

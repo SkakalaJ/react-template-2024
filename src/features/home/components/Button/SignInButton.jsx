@@ -1,5 +1,6 @@
 /** @format */
 import { useNavigate } from 'react-router-dom';
+import useLocalStorage from 'src/hooks/useLocalStorage';
 
 // Components
 import Button from 'src/components/Button';
@@ -7,10 +8,20 @@ import FadeInOut from 'src/components/FadeInOut';
 import Text from 'src/components/Text';
 
 const SignInButton = () => {
+	const [user, setUser] = useLocalStorage('user', null);
 	const navigate = useNavigate();
 
 	const signInButtonClick = () => {
-		navigate('/auth');
+		if (!user) {
+			navigate('/auth');
+			return;
+		}
+
+		setUser({
+			...user,
+			showHomePage: false,
+		});
+		window.location.reload();
 	};
 
 	return (

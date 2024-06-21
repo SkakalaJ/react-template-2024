@@ -15,7 +15,7 @@ const VideoCreditsText = () => {
 				href='https://www.pexels.com/video/light-sea-dawn-landscape-17929837/'
 				className='credits-text'
 				text={'Video by Matthias Groeneveld from Pexels'}
-				style={{ margin: '25px' }}
+				style={{ margin: '25px', color: 'antiquewhite' }}
 			/>
 		</FadeInOut>
 	);

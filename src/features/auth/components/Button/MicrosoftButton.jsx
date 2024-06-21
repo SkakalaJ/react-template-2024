@@ -12,17 +12,11 @@ import MicrosoftLogo from 'src/features/auth/assets/logos/microsoft.png';
 import './styles.css';
 
 const MicrosoftButton = () => {
-	// const openGithubRepo = () => {
-	// 	window.open('https://github.com/SkakalaJ/react-template-2024', '_blank');
-	// };
-
 	return (
 		<Button
 			className='button-auth'
 			style={{ marginLeft: '10px' }}
-			onClick={() => {
-				// openGithubRepo();
-			}}
+			onClick={() => {}}
 		>
 			<Box flexDirection='row'>
 				<Image
