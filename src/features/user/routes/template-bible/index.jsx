@@ -2,12 +2,12 @@
 
 // Packages
 import { Navigate } from 'react-router-dom';
-import RandomAPIsContent from '../../components/Content/RandomAPIsContent';
 // Features
+import TemplateBibleContent from 'src/features/user/components/Content/TemplateBibleContent';
 
 const IndexRoute = {
 	index: true,
-	element: <RandomAPIsContent />,
+	element: <TemplateBibleContent />,
 };
 
 const FallBackRoute = {
@@ -20,9 +20,9 @@ const FallBackRoute = {
 	),
 };
 
-const RandomAPIsRoute = {
-	path: 'random-apis',
+const TemplateBibleRoute = {
+	path: 'template-bible',
 	children: [IndexRoute, FallBackRoute],
 };
 
-export default RandomAPIsRoute;
+export default TemplateBibleRoute;

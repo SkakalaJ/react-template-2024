@@ -3,10 +3,11 @@
 // Packages
 import { Navigate } from 'react-router-dom';
 // Features
+import AuthorsInfoContent from 'src/features/user/components/Content/AuthorsInfoContent';
 
 const IndexRoute = {
 	index: true,
-	element: <>authors-info</>,
+	element: <AuthorsInfoContent />,
 };
 
 const FallBackRoute = {

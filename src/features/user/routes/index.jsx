@@ -8,10 +8,13 @@ import HomePage from 'src/pages/home';
 // Routes
 import RandomAPIsRoute from 'src/features/user/routes/random-apis';
 import AuthorsInfoRoute from 'src/features/user/routes/authors-info';
+import TemplateBibleRoute from 'src/features/user/routes/template-bible';
+// Features
+import UserProfileContent from '../components/Content/UserProfileContent';
 
 const IndexRoute = {
 	index: true,
-	element: <>users profile</>,
+	element: <UserProfileContent />,
 };
 
 const FallBackRoute = {
@@ -27,7 +30,13 @@ const FallBackRoute = {
 const UserRoute = {
 	path: '/',
 	element: <HomePage />,
-	children: [IndexRoute, RandomAPIsRoute, AuthorsInfoRoute, FallBackRoute],
+	children: [
+		IndexRoute,
+		RandomAPIsRoute,
+		TemplateBibleRoute,
+		AuthorsInfoRoute,
+		FallBackRoute,
+	],
 };
 
 export default UserRoute;

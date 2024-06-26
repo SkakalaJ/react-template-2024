@@ -7,9 +7,9 @@ import Button from 'src/components/Button';
 import Image from 'src/components/Image';
 import Box from 'src/components/Box';
 import Text from 'src/components/Text';
-import IconDesignerArtist from 'src/features/user/assets/images/icon-designer-artist.svg';
+import BookHeartIcon from 'src/features/user/assets/images/icon-book-heart-love.svg';
 
-const AuthorsInfoSideMenuButton = () => {
+const TemplateBibleSideMenuButton = () => {
 	const navigate = useNavigate();
 
 	return (
@@ -18,7 +18,7 @@ const AuthorsInfoSideMenuButton = () => {
 			elementType='div'
 			className='button-side-menu-hover'
 			onClick={() => {
-				navigate('/author');
+				navigate('template-bible');
 			}}
 		>
 			<Box
@@ -26,8 +26,8 @@ const AuthorsInfoSideMenuButton = () => {
 				flex='none'
 			>
 				<Image
-					src={IconDesignerArtist}
-					alt='Icon Designer Artist'
+					src={BookHeartIcon}
+					alt='Book Heart Icon'
 					style={{
 						width: '30px',
 						height: '30px',
@@ -38,11 +38,11 @@ const AuthorsInfoSideMenuButton = () => {
 				<Text
 					tag='p'
 					style={{ flex: 'none' }}
-					text={"Author's Info"}
+					text={'Template Bible'}
 				/>
 			</Box>
 		</Button>
 	);
 };
 
-export default AuthorsInfoSideMenuButton;
+export default TemplateBibleSideMenuButton;

@@ -12,6 +12,7 @@ import UserLogoutSideMenuButton from '../Button/UserLogoutSideMenuButton';
 import RandomAPIsSideMenuButton from '../Button/RandomAPIsSideMenuButton';
 import ProfileSideMenuButton from '../Button/ProfileSideMenuButton';
 import AuthorsInfoSideMenuButton from '../Button/AuthorsInfoSideMenuButton';
+import TemplateBibleSideMenuButton from '../Button/TemplateBibleSideMenuButton';
 
 const SideMenuElements = () => {
 	return (
@@ -32,6 +33,7 @@ const SideMenuElements = () => {
 				<Box flex='none'>
 					<ProfileSideMenuButton />
 					<RandomAPIsSideMenuButton />
+					<TemplateBibleSideMenuButton />
 					<AuthorsInfoSideMenuButton />
 				</Box>
 				<Box flex='none'>
