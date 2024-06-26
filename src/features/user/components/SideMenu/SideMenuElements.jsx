@@ -2,9 +2,9 @@
 
 import { Fragment } from 'react';
 
-import Header from 'src/components/Header';
-import Footer from 'src/components/Footer';
-import Box from 'src/components/Box';
+import Header from 'src/shared/components/layout/Header';
+import Footer from 'src/shared/components/layout/Footer';
+import Box from 'src/shared/components/layout/Box';
 import SideMenuFooterElements from 'src/features/user/components/Footer/SideMenuFooterElements';
 import SideMenuHeaderElements from 'src/features/user/components/Header/SideMenuHeaderElements';
 import GoToHomePageSideMenuButton from '../Button/GoToHomePageSideMenuButton';

@@ -1,9 +1,9 @@
 /** @format */
 
 // Components
-import Button from 'src/components/Button';
-import Text from 'src/components/Text';
-import FadeInOut from 'src/components/FadeInOut';
+import Button from 'src/shared/components/ui/Button';
+import Text from 'src/shared/components/ui/Text';
+import FadeInOut from 'src/shared/components/animations/FadeInOut';
 
 const GithubButton = () => {
 	return (

@@ -6,7 +6,7 @@ import CatFactCard from 'src/features/user/components/Card/CatFactCard';
 import DogImagesCard from '../Card/DogImagesCard';
 import IpInfoCard from '../Card/IpInfoCard';
 import TextToYodaCard from '../Card/TextToYodaCard';
-import Box from 'src/components/Box';
+import Box from 'src/shared/components/layout/Box';
 
 const RandomAPIsContent = () => {
 	return (
@@ -18,13 +18,13 @@ const RandomAPIsContent = () => {
 				<DogImagesCard />
 				<CatFactCard />
 			</Box>
-      <Box
+			<Box
 				flex='none'
 				flexDirection='row'
 			>
-        <TextToYodaCard />
-        <IpInfoCard />
-      </Box>
+				<TextToYodaCard />
+				<IpInfoCard />
+			</Box>
 		</Fragment>
 	);
 };

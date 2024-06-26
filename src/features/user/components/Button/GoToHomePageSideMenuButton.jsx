@@ -1,15 +1,16 @@
 /** @format */
 
 // Components
-import Button from 'src/components/Button';
-import Image from 'src/components/Image';
-import Box from 'src/components/Box';
-import Text from 'src/components/Text';
-import LeftArrowIcon from 'src/features/user/assets/images/icon-arrow-left.svg';
-import useLocalStorage from 'src/hooks/useLocalStorage';
+import Button from 'src/shared/components/ui/Button';
+import Image from 'src/shared/components/ui/Image';
+import Box from 'src/shared/components/layout/Box';
+import Text from 'src/shared/components/ui/Text';
+import LeftArrowIcon from 'src/features/user/assets/icons/icon-arrow-left.svg';
+import { useDispatch } from 'react-redux';
+import { setShowHomePage } from 'src/features/user/store/userSlice';
 
 const GoToHomePageSideMenuButton = () => {
-	const [user, setUser] = useLocalStorage('user', null);
+	const dispatch = useDispatch();
 
 	return (
 		<Button
@@ -17,10 +18,9 @@ const GoToHomePageSideMenuButton = () => {
 			elementType='div'
 			className='button-side-menu-hover'
 			onClick={() => {
-				setUser({
-					...user,
-					showHomePage: true,
-				});
+				dispatch(
+					setShowHomePage(true),
+				);
 				window.location.reload();
 			}}
 		>

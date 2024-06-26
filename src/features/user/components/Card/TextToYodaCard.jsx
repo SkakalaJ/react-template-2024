@@ -1,8 +1,8 @@
 /** @format */
 
-import Card from 'src/components/Card';
-import Box from 'src/components/Box';
-import Text from 'src/components/Text';
+import Card from 'src/shared/components/layout/Card';
+import Box from 'src/shared/components/layout/Box';
+import Text from 'src/shared/components/ui/Text';
 
 const CardHeader = () => {
 	return (
@@ -46,7 +46,10 @@ const CardFooter = () => {
 
 const TextToYodaCard = () => {
 	return (
-		<Card width='400px' style={{ margin: '40px' }}>
+		<Card
+			width='400px'
+			style={{ margin: '40px' }}
+		>
 			<CardHeader />
 			<CardContent />
 			<CardFooter />

@@ -3,12 +3,12 @@
 import { useDispatch } from 'react-redux';
 
 // Components
-import Button from 'src/components/Button';
-import FadeInOut from 'src/components/FadeInOut';
-import Text from 'src/components/Text';
+import Button from 'src/shared/components/ui/Button';
+import FadeInOut from 'src/shared/components/animations/FadeInOut';
+import Text from 'src/shared/components/ui/Text';
 
 //Redux
-import { skipIntro } from 'src/features/home/reducers/homeSlice';
+import { skipIntro } from 'src/features/home/store/homeSlice';
 
 const SkipIntroButton = () => {
 	const dispatch = useDispatch();

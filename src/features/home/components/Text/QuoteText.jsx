@@ -1,8 +1,8 @@
 /** @format */
 
 // Components
-import Text from 'src/components/Text';
-import FadeInOut from 'src/components/FadeInOut';
+import Text from 'src/shared/components/ui/Text';
+import FadeInOut from 'src/shared/components/animations/FadeInOut';
 
 const QuoteText = () => {
 	return (

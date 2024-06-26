@@ -4,7 +4,7 @@
 // Packages
 import { Navigate } from 'react-router-dom';
 // Features
-import SignInContentElements from 'src/features/auth/components/Content/SignInContentElements';
+import SignInContentElements from 'src/features/auth/components/layout/Content/SignInContentElements';
 
 const IndexRoute = {
 	index: true,

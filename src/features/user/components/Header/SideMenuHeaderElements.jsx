@@ -2,9 +2,9 @@
 
 // import { Fragment } from 'react';
 
-import Box from 'src/components/Box';
-import Image from 'src/components/Image';
-import Text from 'src/components/Text';
+import Box from 'src/shared/components/layout/Box';
+import Image from 'src/shared/components/ui/Image';
+import Text from 'src/shared/components/ui/Text';
 import MenuHeaderBackground from 'src/features/user/assets/images/menu-header-background.svg';
 
 const SideMenuHeaderElements = () => {

@@ -1,8 +1,9 @@
 /** @format */
 
-import Card from 'src/components/Card';
-import Box from 'src/components/Box';
-import Text from 'src/components/Text';
+import Card from 'src/shared/components/layout/Card';
+import Box from 'src/shared/components/layout/Box';
+import Text from 'src/shared/components/ui/Text';
+import useRandomCatFact from 'src/shared/hooks/useRandomCatFact';
 
 const CardHeader = () => {
 	return (
@@ -23,7 +24,12 @@ const CardHeader = () => {
 };
 
 const CardContent = () => {
-	return <Box style={{ padding: '20px', overflow: 'auto' }}>CONTENT</Box>;
+	const { catFact, loading, error } = useRandomCatFact();
+
+	if (loading) return <p>Loading...</p>;
+	if (error) return <p>Error fetching cat fact: {error.message}</p>;
+
+	return <Box style={{ padding: '20px', overflow: 'auto' }}>{catFact}</Box>;
 };
 
 const CardFooter = () => {
@@ -46,7 +52,10 @@ const CardFooter = () => {
 
 const CatFactCard = () => {
 	return (
-		<Card width='400px' style={{ margin: '40px' }}>
+		<Card
+			width='400px'
+			style={{ margin: '40px' }}
+		>
 			<CardHeader />
 			<CardContent />
 			<CardFooter />

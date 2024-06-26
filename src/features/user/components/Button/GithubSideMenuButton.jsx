@@ -1,11 +1,11 @@
 /** @format */
 
 // Components
-import Button from 'src/components/Button';
-import Image from 'src/components/Image';
-import Box from 'src/components/Box';
-import GitHubLogoWhiteImage from 'src/features/user/assets/images/github-logo-white.png';
-import GitHubMarkWhiteImage from 'src/features/user/assets/images/github-mark-white.svg';
+import Button from 'src/shared/components/ui/Button';
+import Image from 'src/shared/components/ui/Image';
+import Box from 'src/shared/components/layout/Box';
+import GitHubLogoWhiteImage from 'src/features/user/assets/logos/github-logo-white.png';
+import GitHubMarkWhiteImage from 'src/features/user/assets/logos/github-mark-white.svg';
 
 const GithubHeaderButton = () => {
 	return (

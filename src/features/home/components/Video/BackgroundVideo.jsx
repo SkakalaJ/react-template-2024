@@ -5,9 +5,9 @@ import { useDispatch } from 'react-redux';
 // Assets
 import SunBackground from 'src/features/home/assets/videos/pexels-matthias-groeneveld-17929837_(1080p).mp4';
 // Components
-import Video from 'src/components/Video';
+import Video from 'src/shared/components/ui/Video';
 // Redux
-import { setIntroVideoId } from 'src/features/home/reducers/homeSlice';
+import { setIntroVideoId } from 'src/features/home/store/homeSlice';
 
 const BackgroundVideo = () => {
 	const videoDomId = 'home-background-video';

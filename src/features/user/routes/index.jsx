@@ -4,7 +4,7 @@
 // Packages
 import { Navigate } from 'react-router-dom';
 // Pages
-import HomePage from 'src/pages/home';
+import UserPage from 'src/app/pages/home/UserPage';
 // Routes
 import RandomAPIsRoute from 'src/features/user/routes/random-apis';
 import AuthorsInfoRoute from 'src/features/user/routes/authors-info';
@@ -28,8 +28,8 @@ const FallBackRoute = {
 };
 
 const UserRoute = {
-	path: '/',
-	element: <HomePage />,
+	path: '/profile',
+	element: <UserPage />,
 	children: [
 		IndexRoute,
 		RandomAPIsRoute,

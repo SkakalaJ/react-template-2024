@@ -1,14 +1,20 @@
 /** @format */
 import { useNavigate } from 'react-router-dom';
-import useLocalStorage from 'src/hooks/useLocalStorage';
 
 // Components
-import Button from 'src/components/Button';
-import FadeInOut from 'src/components/FadeInOut';
-import Text from 'src/components/Text';
+import Button from 'src/shared/components/ui/Button';
+import FadeInOut from 'src/shared/components/animations/FadeInOut';
+import Text from 'src/shared/components/ui/Text';
+
+import { useDispatch, useSelector } from 'react-redux';
+import { setUser, setShowHomePage } from 'src/features/user/store/userSlice';
 
 const SignInButton = () => {
-	const [user, setUser] = useLocalStorage('user', null);
+	const dispatch = useDispatch();
+
+	const showHomePage = useSelector((state) => state.user.showHomePage);
+	const user = useSelector((state) => state.user.user);
+
 	const navigate = useNavigate();
 
 	const signInButtonClick = () => {
@@ -17,10 +23,16 @@ const SignInButton = () => {
 			return;
 		}
 
-		setUser({
-			...user,
-			showHomePage: false,
-		});
+		dispatch(
+			setUser({
+				...user,
+			}),
+		);
+
+		if (showHomePage === true) {
+			dispatch(setShowHomePage(false));
+		}
+
 		window.location.reload();
 	};
 

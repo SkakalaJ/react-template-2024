@@ -3,12 +3,12 @@
 import { useDispatch, useSelector } from 'react-redux';
 
 // Components
-import Button from 'src/components/Button';
-import FadeInOut from 'src/components/FadeInOut';
-import Text from 'src/components/Text';
+import Button from 'src/shared/components/ui/Button';
+import FadeInOut from 'src/shared/components/animations/FadeInOut';
+import Text from 'src/shared/components/ui/Text';
 
 //Redux
-import { playIntro } from 'src/features/home/reducers/homeSlice';
+import { playIntro } from 'src/features/home/store/homeSlice';
 
 const PlayIntroButton = () => {
 	const intro = useSelector((state) => state.home.intro);

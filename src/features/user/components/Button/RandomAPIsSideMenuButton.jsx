@@ -3,11 +3,11 @@
 import { useNavigate } from 'react-router-dom';
 
 // Components
-import Button from 'src/components/Button';
-import Image from 'src/components/Image';
-import Box from 'src/components/Box';
-import Text from 'src/components/Text';
-import APIIcon from 'src/features/user/assets/images/icon-api.svg';
+import Button from 'src/shared/components/ui/Button';
+import Image from 'src/shared/components/ui/Image';
+import Box from 'src/shared/components/layout/Box';
+import Text from 'src/shared/components/ui/Text';
+import APIIcon from 'src/features/user/assets/icons/icon-api.svg';
 
 const RandomAPIsSideMenuButton = () => {
 	const navigate = useNavigate();
