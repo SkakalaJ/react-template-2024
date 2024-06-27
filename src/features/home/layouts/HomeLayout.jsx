@@ -12,7 +12,16 @@ import HeaderElements from 'src/features/home/components/Header/HeaderElements';
 import FooterElements from 'src/features/home/components/Footer/FooterElements';
 import ContentElements from 'src/features/home/components/Content/ContentElements';
 
+import { useLoading } from 'src/shared/contexts/loadingContext';
+import SphereLoader from 'src/shared/components/animations/SphereLoader';
+
 const HomeLayout = () => {
+	const { loading } = useLoading();
+
+	if (loading) {
+    return <SphereLoader />;
+  }
+
 	return (
 		<div style={{ height: 'inherit', width: '100%' }}>
 			<BackgroundVideo />

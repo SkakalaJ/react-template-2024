@@ -5,14 +5,13 @@ import {
 	LOCAL_STORAGE_USER,
 	LOCAL_STORAGE_SHOW_HOME_PAGE,
 } from 'src/app/store/consts/localStorage';
+import Utils from 'src/shared/utils/utils';
 
 export const userSlice = createSlice({
 	name: 'user',
 	initialState: {
-		user: localStorage.getItem(LOCAL_STORAGE_USER),
-		showHomePage: localStorage.getItem(LOCAL_STORAGE_SHOW_HOME_PAGE)
-			? false
-			: true,
+		user: Utils.getLocalStorageItem(LOCAL_STORAGE_USER, null),
+		showHomePage: Utils.getLocalStorageItem(LOCAL_STORAGE_SHOW_HOME_PAGE, true),
 	},
 	reducers: {
 		setUser: (state, action) => {

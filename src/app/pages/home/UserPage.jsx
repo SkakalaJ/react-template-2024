@@ -2,23 +2,26 @@
 
 // Layouts
 import UserLayout from 'src/features/user/layouts/UserLayout';
-import { useNavigate } from 'react-router-dom';
 import { useSelector } from 'react-redux';
-import { useEffect } from 'react';
+import Redirect from 'src/shared/components/routing/Redirect';
+import LoadingProvider from 'src/shared/contexts/loadingContext';
+import Loadable from 'src/shared/components/behavioral/Loadable';
 
 const UserPage = () => {
-	const navigate = useNavigate();
-	const showHomePage = useSelector((state) => state.user.showHomePage);
-	const user = useSelector((state) => state.user.user);
+	const { showHomePage, user } = useSelector((state) => state.user);
 
-	useEffect(() => {
-		if (!showHomePage || !user) {
-			navigate('/');
-			console.log('Redirecting to Home Page...');
-		}
-	}, [navigate, user, showHomePage]);
+	if (!user || showHomePage) {
+		console.log('Redirecting to Home Page...');
+    return <Redirect to="/" />;
+	}
 
-	return <UserLayout />;
+	return (
+		<LoadingProvider>
+			<Loadable>
+				<UserLayout />
+			</Loadable>
+		</LoadingProvider>
+	);
 };
 
 export default UserPage;

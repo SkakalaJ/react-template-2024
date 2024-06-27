@@ -9,6 +9,7 @@ import UserPage from 'src/app/pages/home/UserPage';
 import RandomAPIsRoute from 'src/features/user/routes/random-apis';
 import AuthorsInfoRoute from 'src/features/user/routes/authors-info';
 import TemplateBibleRoute from 'src/features/user/routes/template-bible';
+import SpecialThanksRoute from 'src/features/user/routes/special-thanks';
 // Features
 import UserProfileContent from '../components/Content/UserProfileContent';
 
@@ -35,6 +36,7 @@ const UserRoute = {
 		RandomAPIsRoute,
 		TemplateBibleRoute,
 		AuthorsInfoRoute,
+		SpecialThanksRoute,
 		FallBackRoute,
 	],
 };

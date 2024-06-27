@@ -1,24 +1,26 @@
-/** @format */
+import { useSelector } from 'react-redux';
+import Redirect from 'src/shared/components/routing/Redirect';
+import LoadingProvider from 'src/shared/contexts/loadingContext';
+import Loadable from 'src/shared/components/behavioral/Loadable';
 
 // Layouts
 import HomeLayout from 'src/features/home/layouts/HomeLayout';
-import { useNavigate } from 'react-router-dom';
-import { useSelector } from 'react-redux';
-import { useEffect } from 'react';
 
 const HomePage = () => {
-	const navigate = useNavigate();
-	const showHomePage = useSelector((state) => state.user.showHomePage);
-	const user = useSelector((state) => state.user.user);
+  const { showHomePage, user } = useSelector((state) => state.user);
 
-	useEffect(() => {
-		if (!showHomePage && user) {
-			navigate('/profile');
-			console.log('Redirecting to Profile Page...');
-		}
-	}, [navigate, showHomePage, user]);
+	if (user && !showHomePage) {
+		console.log('Redirecting to User Page...');
+    return <Redirect to="/profile" />;
+	}
 
-	return <HomeLayout />;
+  return (
+		<LoadingProvider>
+			<Loadable>
+				<HomeLayout />
+			</Loadable>
+		</LoadingProvider>
+	);
 };
 
 export default HomePage;
