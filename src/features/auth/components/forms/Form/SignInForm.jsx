@@ -29,7 +29,7 @@ const SignInForm = () => {
 			}),
 		);
 
-		setShowHomePage(false);
+		dispatch(setShowHomePage(false));
 
 		navigate('/');
 	};

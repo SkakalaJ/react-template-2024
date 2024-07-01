@@ -14,4 +14,10 @@ export default class Utils {
 
 		return JSON.parse(value);
 	}
+
+	static encodePngToBase64(binary){
+		return `data:image/png;base64,${btoa(
+			new Uint8Array(binary).reduce((data, byte) => data + String.fromCharCode(byte), '')
+		)}`;
+	}
 }

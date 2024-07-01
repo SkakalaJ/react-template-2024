@@ -13,7 +13,7 @@ const useTextToYodaLang = (text) => {
 			const startTime = Date.now();
 
 			try {
-				const response = await FunTranslationsAPI.Post.translateToYoda({
+				const response = await FunTranslationsAPI.Get.translateToYoda({
 					text,
 				});
 				setYodaText(response.contents.translated.text);

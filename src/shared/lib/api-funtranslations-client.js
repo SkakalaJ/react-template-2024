@@ -10,7 +10,7 @@ const axiosClient = axios.create({
 });
 
 export default class FunTranslationsAPI {
-	static Post = {
+	static Get = {
 		async translateToYoda(text = null) {
 			try {
 				const response = await axiosClient.get('/translate/yoda.json', {
