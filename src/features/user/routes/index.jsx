@@ -29,7 +29,7 @@ const FallBackRoute = {
 };
 
 const UserRoute = {
-	path: '/profile',
+	path: '/user',
 	element: <UserPage />,
 	children: [
 		IndexRoute,

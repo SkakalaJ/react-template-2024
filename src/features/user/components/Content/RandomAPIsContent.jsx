@@ -14,16 +14,23 @@ const RandomAPIsContent = () => {
 			<Box
 				flex='none'
 				flexDirection='row'
+				alignItems='start'
+				justifyContent='center'
 			>
-				<DogImagesCard />
-				<CatFactCard />
-			</Box>
-			<Box
-				flex='none'
-				flexDirection='row'
-			>
-				<TextToYodaCard />
-				<IpInfoCard />
+				<Box
+					flex='none'
+					width='auto'
+				>
+					<DogImagesCard />
+					<IpInfoCard />
+				</Box>
+				<Box
+					flex='none'
+					width='auto'
+				>
+					<CatFactCard />
+					<TextToYodaCard />
+				</Box>
 			</Box>
 		</Fragment>
 	);

@@ -86,6 +86,10 @@ div {
 	background-color: #fdb1a8;
 }
 
+.button-side-menu-active{
+	background-color: #fdb1a866;
+}
+
 .button-side-menu-hover:hover > * {
 	color: white;
 }

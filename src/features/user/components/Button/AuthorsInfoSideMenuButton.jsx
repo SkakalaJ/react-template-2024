@@ -1,6 +1,6 @@
 /** @format */
 
-import { useNavigate } from 'react-router-dom';
+import { useNavigate, useLocation } from 'react-router-dom';
 
 // Components
 import Button from 'src/shared/components/ui/Button';
@@ -11,14 +11,17 @@ import IconDesignerArtist from 'src/features/user/assets/icons/icon-designer-art
 
 const AuthorsInfoSideMenuButton = () => {
 	const navigate = useNavigate();
+	const location = useLocation();
+
+	const isActive = location.pathname.endsWith('/author');
 
 	return (
 		<Button
 			style={{ width: '100%', padding: '7.5px 20px' }}
 			elementType='div'
-			className='button-side-menu-hover'
+			className={(isActive) ? 'button-side-menu-active' : 'button-side-menu-hover'}
 			onClick={() => {
-				navigate('/author');
+				navigate('author');
 			}}
 		>
 			<Box

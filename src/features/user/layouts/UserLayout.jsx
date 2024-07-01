@@ -5,15 +5,15 @@ import SideMenu from 'src/shared/components/layout/SideMenu';
 import Content from 'src/shared/components/layout/Content';
 import SideMenuElements from 'src/features/user/components/SideMenu/SideMenuElements';
 import { Outlet } from 'react-router-dom';
-// import { useLoading } from 'src/shared/contexts/loadingContext';
-// import SphereLoader from 'src/shared/components/animations/SphereLoader';
+import { useLoading } from 'src/shared/contexts/loadingContext';
+import SphereLoader from 'src/shared/components/animations/SphereLoader';
 
 const UserLayout = () => {
-	// const { loading } = useLoading();
+	const { loading } = useLoading();
 
-	// if (loading) {
-  //   return <SphereLoader />;
-  // }
+	if (loading) {
+		return <SphereLoader />;
+	}
 
 	return (
 		<div
@@ -24,7 +24,14 @@ const UserLayout = () => {
 				<SideMenuElements />
 			</SideMenu>
 
-			<Content>
+			<Content
+				style={{
+					justifyContent: 'center',
+					overflow: 'hidden',
+					width: '100%',
+					overflowY: 'auto'
+				}}
+			>
 				<Outlet />
 			</Content>
 

@@ -2,7 +2,7 @@
 
 import { Fragment } from 'react';
 import SignInCard from 'src/features/auth/components/layout/Card/SignInCard';
-import ResetPasswordModal from '../Modal/ResetPasswordModal';
+import ResetPasswordModal from '../../ui/Modal/ResetPasswordModal';
 
 const SignInContentElements = () => {
 	return (

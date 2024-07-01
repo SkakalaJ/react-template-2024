@@ -12,7 +12,7 @@ const UserPage = () => {
 
 	if (!user || showHomePage) {
 		console.log('Redirecting to Home Page...');
-    return <Redirect to="/" />;
+		return <Redirect to='/' />;
 	}
 
 	return (

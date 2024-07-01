@@ -19,8 +19,8 @@ const HomeLayout = () => {
 	const { loading } = useLoading();
 
 	if (loading) {
-    return <SphereLoader />;
-  }
+		return <SphereLoader />;
+	}
 
 	return (
 		<div style={{ height: 'inherit', width: '100%' }}>

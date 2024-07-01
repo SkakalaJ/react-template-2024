@@ -7,13 +7,12 @@ import FadeInOut from 'src/shared/components/animations/FadeInOut';
 import Text from 'src/shared/components/ui/Text';
 
 import { useDispatch, useSelector } from 'react-redux';
-import { setUser, setShowHomePage } from 'src/features/user/store/userSlice';
+import { setShowHomePage } from 'src/features/user/store/userSlice';
 
 const SignInButton = () => {
 	const dispatch = useDispatch();
 
-	const showHomePage = useSelector((state) => state.user.showHomePage);
-	const user = useSelector((state) => state.user.user);
+	const { user, showHomePage } = useSelector((state) => state.user);
 
 	const navigate = useNavigate();
 
@@ -23,17 +22,23 @@ const SignInButton = () => {
 			return;
 		}
 
-		dispatch(
-			setUser({
-				...user,
-			}),
-		);
-
 		if (showHomePage === true) {
 			dispatch(setShowHomePage(false));
 		}
 
 		window.location.reload();
+	};
+
+	const getButtonText = () => {
+		if (user && user.email) {
+			return `Sign In with email: ${user.email}`;
+		}
+
+		if (user && user.mobile) {
+			return `Sign In with mobile: ${user.mobile}`;
+		}
+
+		return 'Sign In';
 	};
 
 	return (
@@ -47,7 +52,7 @@ const SignInButton = () => {
 			>
 				<Text
 					tag={'a'}
-					text={'Sign In'}
+					text={getButtonText()}
 				/>
 			</Button>
 		</FadeInOut>

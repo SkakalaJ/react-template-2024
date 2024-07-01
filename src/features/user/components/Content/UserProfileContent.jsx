@@ -1,11 +1,15 @@
 /** @format */
 
 import { Fragment } from 'react';
+import Box from 'src/shared/components/layout/Box';
+import UserProfileCard from '../Card/UserProfileCard';
 
 const UserProfileContent = () => {
 	return (
 		<Fragment>
-			<>users profile</>
+			<Box>
+				<UserProfileCard />
+			</Box>
 		</Fragment>
 	);
 };

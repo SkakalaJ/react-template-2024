@@ -26,23 +26,27 @@ const SideMenuElements = () => {
 				<SideMenuHeaderElements />
 			</Header>
 
+			
 			<Box
 				flex={1}
 				justifyContent='space-between'
 				style={{ padding: '10px 0' }}
 			>
-				<Box flex='none'>
-					<ProfileSideMenuButton />
-					<RandomAPIsSideMenuButton />
-					<TemplateBibleSideMenuButton />
-					<AuthorsInfoSideMenuButton />
-					<SpecialThanksSideMenuButton />
-				</Box>
-				<Box flex='none'>
-					<GoToHomePageSideMenuButton />
-					<UserLogoutSideMenuButton />
-				</Box>
+				
+			<Box flex='none'>
+				<ProfileSideMenuButton />
+				<RandomAPIsSideMenuButton />
+				<TemplateBibleSideMenuButton />
+				<AuthorsInfoSideMenuButton />
+				<SpecialThanksSideMenuButton />
 			</Box>
+			
+
+			<Box flex='none'>
+				<GoToHomePageSideMenuButton />
+				<UserLogoutSideMenuButton />
+			</Box>
+		</Box>
 
 			<Footer
 				height='208px'

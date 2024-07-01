@@ -18,9 +18,7 @@ const GoToHomePageSideMenuButton = () => {
 			elementType='div'
 			className='button-side-menu-hover'
 			onClick={() => {
-				dispatch(
-					setShowHomePage(true),
-				);
+				dispatch(setShowHomePage(true));
 				window.location.reload();
 			}}
 		>

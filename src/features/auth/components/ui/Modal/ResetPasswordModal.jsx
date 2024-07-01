@@ -2,7 +2,7 @@
 
 import { useLocation } from 'react-router-dom';
 
-import Modal from 'src/shared/components/layout/Modal';
+import Modal from 'src/shared/components/ui/Modal';
 import Box from 'src/shared/components/layout/Box';
 import ResetPasswordCard from 'src/features/auth/components/layout/Card/ResetPasswordCard';
 

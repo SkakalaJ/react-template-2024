@@ -1,0 +1,27 @@
+/** @format */
+
+.input-default {
+	padding: 8px 10px 10px 10px;
+	background: #f5f6f7;
+	border-color: #ccd0d5;
+	border: 1px solid #ccd0d5;
+	border-radius: 5px;
+	color: black;
+	width: 100%;
+	font-size: 13px;
+	line-height: 13px;
+	letter-spacing: 0.15px;
+}
+
+.input-default:invalid {
+	outline-color: rgb(255, 140, 140);
+}
+
+.input-default:read-only {
+	color: gray;
+	pointer-events: none;
+}
+
+/* .input-default:focus {
+	outline-color: rgb(192, 192, 192);
+} */
