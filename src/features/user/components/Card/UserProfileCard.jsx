@@ -10,8 +10,7 @@ import Error from 'src/shared/components/errors/Error';
 
 const UserProfileCard = () => {
 	const { user } = useSelector((state) => state.user);
-	const { email } = user;
-	const { mobile } = user;
+	const { email, mobile } = user;
 	const { avatar, error } = useRobohashImage((email) ? email : mobile);
 
 	if (error) return <Error text={error.message} />;

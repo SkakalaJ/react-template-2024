@@ -26,7 +26,7 @@ const UserLayout = () => {
 
 			<Content
 				style={{
-					justifyContent: 'center',
+					justifyContent: 'flex-start',
 					overflow: 'hidden',
 					width: '100%',
 					overflowY: 'auto'
